@@ -2,7 +2,6 @@
 
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { FiDownload } from 'react-icons/fi';
 
 export default function About() {
@@ -67,13 +66,13 @@ export default function About() {
             <h4 className="text-xl text-highlight-primary">Full Stack Developer</h4>
             
             <p className="text-dark-muted">
-              Hello! I'm a passionate developer with expertise in building modern, responsive web applications. 
+              Hello! I&apos;m a passionate developer with expertise in building modern, responsive web applications. 
               I specialize in creating clean, efficient code and intuitive user interfaces that provide seamless experiences.
             </p>
             
             <p className="text-dark-muted">
               With a strong foundation in both frontend and backend technologies, I enjoy tackling complex problems 
-              and turning ideas into reality. I'm constantly learning new technologies to stay at the forefront of web development.
+              and turning ideas into reality. I&apos;m constantly learning new technologies to stay at the forefront of web development.
             </p>
 
             <div className="pt-4 grid grid-cols-2 gap-4">
@@ -98,6 +97,7 @@ export default function About() {
             <motion.a
               href="https://satyamregmi.com.np/assets/satyam-resume.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.6 }}

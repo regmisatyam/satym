@@ -72,7 +72,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-4"
         >
-          <h2 className="text-2xl text-highlight-primary font-bold mb-2">Hello, I'm</h2>
+          <h2 className="text-2xl text-highlight-primary font-bold mb-2">Hello, I&apos;m</h2>
         </motion.div>
 
         <motion.h1
