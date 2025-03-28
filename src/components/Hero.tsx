@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowDown, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 import Link from 'next/link';
+import { LINKS } from '../constants/globalConstants'
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -119,13 +120,13 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="flex justify-center space-x-6"
         >
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
+          <a href={LINKS.GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
             <FiGithub size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
+          <a href={`${LINKS.LINKEDIN}`} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
             <FiLinkedin size={24} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
+          <a href={`${LINKS.X}`} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-dark-muted hover:text-highlight-primary transition-colors duration-300">
             <FiTwitter size={24} />
           </a>
         </motion.div>

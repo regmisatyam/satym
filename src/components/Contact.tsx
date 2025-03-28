@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
+import {LINKS} from '../constants/globalConstants'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -75,9 +76,9 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">Email</h4>
-                <p className="text-dark-muted">info@satyamregmi.com.np</p>
+                <p className="text-dark-muted">{LINKS.EMAIL}</p>
                 <a 
-                  href="mailto:info@satyamregmi.com.np" 
+                  href={`mailto:${LINKS.EMAIL}`}
                   className="text-highlight-primary hover:text-highlight-secondary transition-colors duration-300 text-sm"
                 >
                   Send an email
@@ -107,7 +108,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">Location</h4>
-                <p className="text-dark-muted">San Francisco, California</p>
+                <p className="text-dark-muted">Caldwell, New Jersey</p>
                 <p className="text-dark-muted">United States</p>
               </div>
             </div>

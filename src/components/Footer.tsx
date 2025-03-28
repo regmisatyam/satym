@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiArrowUp } from 'react-icons/fi';
+import { LINKS } from '../constants/globalConstants'
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -40,7 +41,7 @@ export default function Footer() {
           >
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://github.com"
+                href={LINKS.GITHUB}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -49,7 +50,7 @@ export default function Footer() {
                 <FiGithub size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href={LINKS.LINKEDIN}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -58,7 +59,7 @@ export default function Footer() {
                 <FiLinkedin size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href={LINKS.X}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -67,7 +68,7 @@ export default function Footer() {
                 <FiTwitter size={20} />
               </a>
               <a
-                href="https://instagram.com"
+                href={LINKS.INSTAGRAM}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"

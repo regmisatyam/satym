@@ -3,6 +3,7 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { FiDownload } from 'react-icons/fi';
+import {LINKS} from '../constants/globalConstants'
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -78,7 +79,7 @@ export default function About() {
             <div className="pt-4 grid grid-cols-2 gap-4">
               <div>
                 <h5 className="font-semibold text-dark-text">Email</h5>
-                <p className="text-dark-muted">info@satyamregmi.com.np</p>
+                <p className="text-dark-muted">{LINKS.EMAIL}</p>
               </div>
               <div>
                 <h5 className="font-semibold text-dark-text">Location</h5>
