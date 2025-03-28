@@ -8,56 +8,56 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 const projectsData = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform with payment processing, order management, and admin dashboard.',
-    tags: ['Web', 'React', 'Node.js', 'MongoDB'],
-    demoLink: '#',
+    title: 'Teletech Nepal',
+    description: 'A full-stack blogging platform with auth, user and admin dashboard.',
+    tags: ['Web', 'Next.js', 'Node.js', 'PostgreSQL', 'Prisma'],
+    demoLink: 'https://teletechnepal.com',
     codeLink: '#',
   },
   {
     id: 2,
-    title: 'AI Image Generator',
-    description: 'Web application that uses machine learning to generate unique images based on text descriptions.',
-    tags: ['AI', 'Python', 'React', 'TensorFlow'],
-    demoLink: '#',
+    title: 'Guide of Visa',
+    description: 'Website that guides through visa process for different countries. Tracks Application and AI powered visa Interview. ',
+    tags: ['Web','AI', 'Python', 'Remix', 'Supabase', 'Firebase'],
+    demoLink: 'https://guideofvisa.com',
     codeLink: '#',
   },
   {
     id: 3,
-    title: 'Real-time Chat App',
-    description: 'Messaging application with real-time communication, user authentication, and file sharing capabilities.',
-    tags: ['Web', 'Socket.io', 'React', 'Express'],
-    demoLink: '#',
+    title: 'All Nepali News',
+    description: 'All Nepali News. Short Fast Authentic news application.',
+    tags: ['Mobile', 'Web', 'Java', 'Python', 'React Native', 'Firebase'],
+    demoLink: 'https://play.google.com/store/apps/details?id=com.satyamregmi.AllNepaliNews',
     codeLink: '#',
   },
   {
     id: 4,
-    title: 'Task Management System',
-    description: 'Collaborative project management tool with task tracking, deadlines, and team collaboration features.',
-    tags: ['Web', 'Vue.js', 'Firebase', 'Tailwind'],
-    demoLink: '#',
-    codeLink: '#',
+    title: 'Fav Icon From Url',
+    description: 'Extract website favicons from url and provides favicon link in json format',
+    tags: ['Web', 'Python', 'Scraping'],
+    demoLink: 'https://fifu.vercel.app/?url=https://facebook.com',
+    codeLink: 'https://github.com/regmisatyam/FavIconFromUrl',
   },
   {
     id: 5,
-    title: 'Finance Dashboard',
-    description: 'Interactive dashboard for financial data visualization with real-time updates and analytics.',
-    tags: ['Data', 'D3.js', 'React', 'Node.js'],
-    demoLink: '#',
-    codeLink: '#',
+    title: 'SBP',
+    description: 'SBP is a Content Management System build on pure php with MySQL db. It is fast and occupies low storage. Can run on any apache or nginx server.',
+    tags: ['Web', 'CMS', 'PHP', 'MySQL'],
+    demoLink: 'https://blogs.satyamregmi.com.np',
+    codeLink: 'https://github.com/regmisatyam/sbp',
   },
   {
     id: 6,
-    title: 'Mobile Fitness App',
-    description: 'Cross-platform fitness application for workout tracking, nutrition planning, and health analytics.',
-    tags: ['Mobile', 'React Native', 'Firebase', 'Redux'],
-    demoLink: '#',
-    codeLink: '#',
+    title: 'Text to Speech',
+    description: 'Converts any language text to Speech. Accessible through huggingface studio and API',
+    tags: ['AI', 'Hugging Face', 'TTS', 'Python'],
+    demoLink: 'https://regmisatyam-text-to-speech.hf.space/',
+    codeLink: 'https://github.com/regmisatyam/text-to-speech-ai-model',
   },
 ];
 
 // Unique categories for filtering
-const categories = ['All', 'Web', 'Mobile', 'AI', 'Data'];
+const categories = ['All', 'Web', 'Mobile', 'AI'];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -154,7 +154,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="text-dark-muted hover:text-highlight-primary transition-colors duration-300 flex items-center"
                   >
-                    <FiExternalLink className="mr-1" /> Demo
+                    <FiExternalLink className="mr-1" /> Visit
                   </a>
                   <a
                     href={project.codeLink}
