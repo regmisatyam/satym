@@ -15,6 +15,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Satyam Regmi | Portfolio",
   description: "Personal portfolio website of Satyam Regmi showcasing projects and skills",
+  icons: {
+    icon: "/image.png",
+    shortcut: "/image.png",
+    },
+  twitter: {
+    card: "summary_large_image",
+    title: "Satyam Regmi | Portfolio",
+    description: "Personal portfolio website of Satyam Regmi showcasing projects and skills",
+    images: ["/image.png"],
+  },
+  openGraph: {
+    title: "Satyam Regmi | Portfolio",
+    description: "Personal portfolio website of Satyam Regmi showcasing projects and skills",
+    images: ["/image.png"],
+  }
 };
 
 export default function RootLayout({
@@ -24,6 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="shortcut icon" href="/image.png" type="image/x-icon" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark-primary text-dark-text`}
       >
