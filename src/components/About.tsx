@@ -96,7 +96,7 @@ export default function About() {
             </div>
 
             <motion.a
-              href="https://satyamregmi.com.np/assets/satyam-resume.pdf"
+              href="https://satyamregmi.com.np/assets/SatyamResumeUpdated.pdf"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
