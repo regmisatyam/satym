@@ -111,7 +111,7 @@ export default function Chatbot() {
           navigateToSection(section);
           assistantMessage = `Sure! Taking you to the ${section} section.`;
         }
-      } catch (e) {
+      } catch {
         // Not a navigation response, continue normally
       }
 
