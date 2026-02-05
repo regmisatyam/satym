@@ -44,7 +44,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-dark-primary">
+    <section id="hero" className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-dark-primary">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(5)].map((_, i) => (
