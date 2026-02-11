@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMessageCircle, FiX, FiSend, FiUser, FiCpu, FiTrash2 } from 'react-icons/fi';
+import { FiMessageCircle, FiX, FiSend, FiUser, FiCpu, FiTrash2, FiMic, FiMicOff } from 'react-icons/fi';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -14,8 +14,168 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isListening, setIsListening] = useState(false);
+  const [isVoiceSupported, setIsVoiceSupported] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const recognitionRef = useRef<any>(null);
+
+  // Send voice command
+  const handleSendVoiceCommand = async (voiceInput: string) => {
+    if (!voiceInput.trim() || isLoading) return;
+
+    const userMessage: Message = { role: 'user', content: voiceInput };
+    setMessages((prev) => [...prev, userMessage]);
+    setInput('');
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          messages: [...messages, userMessage].map((msg) => ({
+            role: msg.role,
+            content: msg.content,
+          })),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response');
+      }
+
+      const data = await response.json();
+      let assistantMessage = data.message;
+
+      // Check if the response contains a navigation action
+      try {
+        const navigationMatch = assistantMessage.match(/\{"action":\s*"navigate",\s*"section":\s*"([^"]+)"\}/);
+        if (navigationMatch) {
+          const section = navigationMatch[1];
+          navigateToSection(section);
+          assistantMessage = `Sure! Taking you to the ${section} section.`;
+        }
+      } catch {
+        // Not a navigation response, continue normally
+      }
+
+      setMessages((prev) => [...prev, { role: 'assistant', content: assistantMessage }]);
+    } catch (error) {
+      console.error('Error:', error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: 'assistant',
+          content: "Sorry, I'm having trouble connecting right now. Please try again.",
+        },
+      ]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Initialize voice recognition
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        setIsVoiceSupported(true);
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'en-US';
+
+        recognition.onresult = (event: any) => {
+          const transcript = event.results[0][0].transcript;
+          setInput(transcript);
+          setIsListening(false);
+          
+          // Auto-send the voice command after a short delay
+          setTimeout(() => {
+            if (transcript.trim()) {
+              // Create the message directly here to avoid closure issues
+              const userMessage: Message = { role: 'user', content: transcript };
+              setMessages((prev) => [...prev, userMessage]);
+              setInput('');
+              setIsLoading(true);
+
+              fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  messages: [...messages, userMessage].map((msg) => ({
+                    role: msg.role,
+                    content: msg.content,
+                  })),
+                }),
+              })
+                .then((response) => {
+                  if (!response.ok) {
+                    throw new Error('Failed to get response');
+                  }
+                  return response.json();
+                })
+                .then((data) => {
+                  let assistantMessage = data.message;
+
+                  // Check if the response contains a navigation action
+                  try {
+                    const navigationMatch = assistantMessage.match(/\{"action":\s*"navigate",\s*"section":\s*"([^"]+)"\}/);
+                    if (navigationMatch) {
+                      const section = navigationMatch[1];
+                      navigateToSection(section);
+                      assistantMessage = `Sure! Taking you to the ${section} section.`;
+                    }
+                  } catch {
+                    // Not a navigation response, continue normally
+                  }
+
+                  setMessages((prev) => [...prev, { role: 'assistant', content: assistantMessage }]);
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                  setMessages((prev) => [
+                    ...prev,
+                    {
+                      role: 'assistant',
+                      content: "Sorry, I'm having trouble connecting right now. Please try again.",
+                    },
+                  ]);
+                })
+                .finally(() => {
+                  setIsLoading(false);
+                });
+            }
+          }, 500);
+        };
+
+        recognition.onerror = (event: any) => {
+          console.error('Speech recognition error:', event.error);
+          setIsListening(false);
+          if (event.error === 'not-allowed') {
+            alert('Microphone access denied. Please allow microphone access to use voice commands.');
+          }
+        };
+
+        recognition.onend = () => {
+          setIsListening(false);
+        };
+
+        recognitionRef.current = recognition;
+      }
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
+    };
+  }, []);
 
   // Load messages from localStorage on mount
   useEffect(() => {
@@ -25,18 +185,26 @@ export default function Chatbot() {
         setMessages(JSON.parse(savedMessages));
       } catch (error) {
         console.error('Error loading messages:', error);
+        const welcomeMessage = isVoiceSupported 
+          ? "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. You can type or use the microphone button to speak. What would you like to know?"
+          : "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?";
+        
         setMessages([
           {
             role: 'assistant',
-            content: "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?",
+            content: welcomeMessage,
           },
         ]);
       }
     } else {
+      const welcomeMessage = isVoiceSupported 
+        ? "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. You can type or use the microphone button to speak. What would you like to know?"
+        : "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?";
+      
       setMessages([
         {
           role: 'assistant',
-          content: "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?",
+          content: welcomeMessage,
         },
       ]);
     }
@@ -138,12 +306,32 @@ export default function Chatbot() {
   };
 
   const clearChat = () => {
+    const welcomeMessage = isVoiceSupported 
+      ? "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. You can type or use the microphone button to speak. What would you like to know?"
+      : "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?";
+    
     const initialMessage: Message = {
       role: 'assistant',
-      content: "Hi! I'm Satyam's AI assistant. I can answer questions about his work, skills, and projects, or help you navigate the website. What would you like to know?",
+      content: welcomeMessage,
     };
     setMessages([initialMessage]);
     localStorage.setItem('chatbot-messages', JSON.stringify([initialMessage]));
+  };
+
+  const toggleVoiceRecognition = () => {
+    if (!recognitionRef.current) return;
+
+    if (isListening) {
+      recognitionRef.current.stop();
+      setIsListening(false);
+    } else {
+      try {
+        recognitionRef.current.start();
+        setIsListening(true);
+      } catch (error) {
+        console.error('Error starting recognition:', error);
+      }
+    }
   };
 
   const quickActions = [
@@ -351,6 +539,31 @@ export default function Chatbot() {
 
             {/* Input */}
             <div className="p-4 border-t border-dark-accent" style={{ padding: '1rem', borderTop: '1px solid #2d2d2d', backgroundColor: '#1e1e1e' }}>
+              {isListening && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="flex items-center justify-center space-x-2 mb-2 text-red-400 text-sm"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    marginBottom: '0.5rem',
+                    color: '#f87171',
+                    fontSize: '0.875rem',
+                  }}
+                >
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                  >
+                    <FiMic size={16} />
+                  </motion.div>
+                  <span>Listening... Speak now</span>
+                </motion.div>
+              )}
               <div className="flex space-x-2" style={{ display: 'flex', gap: '0.5rem' }}>
                 <input
                   ref={inputRef}
@@ -358,8 +571,8 @@ export default function Chatbot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Type your message..."
-                  disabled={isLoading}
+                  placeholder={isListening ? "Listening..." : "Type your message..."}
+                  disabled={isLoading || isListening}
                   className="flex-1 bg-dark-accent text-dark-text placeholder-dark-muted px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-highlight-primary disabled:opacity-50"
                   style={{
                     flex: 1,
@@ -371,6 +584,31 @@ export default function Chatbot() {
                     border: 'none',
                   }}
                 />
+                {isVoiceSupported && (
+                  <motion.button
+                    onClick={toggleVoiceRecognition}
+                    disabled={isLoading}
+                    className={`p-2 rounded-full transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${
+                      isListening 
+                        ? 'bg-red-500 text-white animate-pulse' 
+                        : 'bg-dark-accent text-dark-muted hover:bg-dark-accent/70'
+                    }`}
+                    aria-label={isListening ? "Stop voice recording" : "Start voice recording"}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    style={{
+                      padding: '0.5rem',
+                      borderRadius: '9999px',
+                      border: 'none',
+                      cursor: isLoading ? 'not-allowed' : 'pointer',
+                      opacity: isLoading ? 0.5 : 1,
+                      backgroundColor: isListening ? '#ef4444' : '#2d2d2d',
+                      color: isListening ? 'white' : '#9ca3af',
+                    }}
+                  >
+                    {isListening ? <FiMicOff size={20} /> : <FiMic size={20} />}
+                  </motion.button>
+                )}
                 <button
                   onClick={handleSend}
                   disabled={isLoading || !input.trim()}
