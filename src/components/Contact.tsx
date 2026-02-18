@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
-import {LINKS} from '../constants/globalConstants'
+import {LINKS} from '../constants/globalConstants';
+import WeatherBackground from './WeatherBackground';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -44,8 +45,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-dark-secondary">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="relative overflow-hidden bg-dark-secondary">
+            <WeatherBackground>
+      <div className="relative z-10 container section-padding mx-auto px-6">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -233,6 +235,7 @@ export default function Contact() {
           </motion.div>
         </div>
       </div>
+      </WeatherBackground>
     </section>
   );
 } 

@@ -859,3 +859,6 @@ body {
 .animate-slide-down {
   animation: slideDown 0.5s ease-in-out;
 }
+.right-20 {
+  right: 20px;
+}
