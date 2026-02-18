@@ -402,16 +402,16 @@ export default function WeatherBackground({ children }: { children?: React.React
     async function fetchWeather() {
       try {
         // Caldwell, NJ
-        // const lat = 40.8398;
-        // const lon = -74.2765;
+        const lat = 40.8398;
+        const lon = -74.2765;
 
         //Kathmandu, Nepal
         // const lat = 27.7103
         // const lon = 85.325;
 
         // Buenos Aires, Argentina
-        const lat = -34.6037;
-        const lon = -58.3816;
+        // const lat = -34.6037;
+        // const lon = -58.3816;
 
         //London, UK
         // const lat = 51.5072;
