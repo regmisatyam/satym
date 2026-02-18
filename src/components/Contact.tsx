@@ -27,21 +27,41 @@ export default function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitError, setSubmitError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setSubmitMessage('');
+    setSubmitError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
       setSubmitMessage('Your message has been sent successfully!');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Clear success message after 5 seconds
+
       setTimeout(() => {
         setSubmitMessage('');
       }, 5000);
-    }, 1500);
+    } catch (error: any) {
+      setSubmitError(error.message || 'Something went wrong. Please try again.');
+      setTimeout(() => {
+        setSubmitError('');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -153,6 +173,16 @@ export default function Contact() {
                 className="bg-green-900/30 text-green-400 p-4 rounded-lg mb-6"
               >
                 {submitMessage}
+              </motion.div>
+            )}
+
+            {submitError && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-red-900/30 text-red-400 p-4 rounded-lg mb-6"
+              >
+                {submitError}
               </motion.div>
             )}
             
