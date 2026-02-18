@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMessageCircle, FiX, FiSend, FiUser, FiCpu, FiTrash2, FiMic, FiMicOff } from 'react-icons/fi';
+import ReactMarkdown from 'react-markdown';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -479,7 +480,9 @@ export default function Chatbot() {
                         borderTopLeftRadius: message.role === 'user' ? '1rem' : '0.25rem',
                       }}
                     >
-                      <p className="text-sm whitespace-pre-wrap" style={{ fontSize: '0.875rem', whiteSpace: 'pre-wrap' }}>{message.content}</p>
+                      <div className={`text-sm chatbot-markdown ${message.role === 'user' ? 'chatbot-markdown-user' : ''}`} style={{ fontSize: '0.875rem' }}>
+                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                      </div>
                     </div>
                   </div>
                 </motion.div>

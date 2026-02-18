@@ -7,10 +7,11 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const navLinks = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/#about' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Skills', href: '/#skills' },
+  { name: 'Contact', href: '/#contact' },
+  { name: 'News', href: 'https://dailyfeed.teletechnepal.com' },
 ];
 
 export default function Navbar() {

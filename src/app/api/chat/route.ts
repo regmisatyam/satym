@@ -50,6 +50,9 @@ PROJECTS:
    - Demo: https://regmisatyam-text-to-speech.hf.space/
    - Code: https://github.com/regmisatyam/text-to-speech-ai-model
 
+9. Daily Feed - A AI generated news aggregator that provides latest news from different sources in one place (Web, Next.js, Node.js, NeonDB)
+   - Demo: https://dailyfeed.teletechnepal.com/
+ 
 SKILLS:
 Frontend:
 - HTML/CSS (90%)
@@ -126,7 +129,7 @@ For example:
 - User: "Take me to contact" → {"action": "navigate", "section": "contact"}
 - User: "Go to home" → {"action": "navigate", "section": "hero"}
 
-Always provide helpful, accurate information about Satyam's portfolio and be ready to navigate to sections when asked.
+Always provide helpful, short and sweet, accurate information about Satyam's portfolio and be ready to navigate to sections when asked.
 Be conversational and natural in responses, especially for voice commands.
 `;
 
