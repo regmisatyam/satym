@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import ModeChooser from './ModeChooser';
 
 type UIMode = 'browse' | 'terminal';
 
@@ -24,6 +25,7 @@ export function useTerminalMode() {
 export function TerminalProvider({ children }: { children: React.ReactNode }) {
   const [uiMode, setUiMode] = useState<UIMode>('browse');
   const [mounted, setMounted] = useState(false);
+  const [needsChoice, setNeedsChoice] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -35,6 +37,11 @@ export function TerminalProvider({ children }: { children: React.ReactNode }) {
       if (pathname !== '/terminal') {
         router.push('/terminal');
       }
+    } else if (stored === 'browse') {
+      setUiMode('browse');
+    } else {
+      // First visit — no preference saved yet
+      setNeedsChoice(true);
     }
     setMounted(true);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -58,13 +65,26 @@ export function TerminalProvider({ children }: { children: React.ReactNode }) {
     setMode(uiMode === 'browse' ? 'terminal' : 'browse');
   }, [uiMode, setMode]);
 
+  const handleFirstChoice = useCallback(
+    (mode: UIMode) => {
+      setNeedsChoice(false);
+      setMode(mode);
+    },
+    [setMode]
+  );
+
   // Don't render anything mode-dependent until mounted to avoid hydration mismatch
   if (!mounted) {
-    return <TerminalContext.Provider value={{ uiMode: 'browse', toggleMode, setMode }}>{children}</TerminalContext.Provider>;
+    return (
+      <TerminalContext.Provider value={{ uiMode: 'browse', toggleMode, setMode }}>
+        {children}
+      </TerminalContext.Provider>
+    );
   }
 
   return (
     <TerminalContext.Provider value={{ uiMode, toggleMode, setMode }}>
+      {needsChoice && <ModeChooser onChoose={handleFirstChoice} />}
       {children}
     </TerminalContext.Provider>
   );
