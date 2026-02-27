@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMessageCircle, FiX, FiSend, FiUser, FiCpu, FiTrash2, FiMic, FiMicOff } from 'react-icons/fi';
+import { FiMessageCircle, FiX, FiSend, FiUser, FiCpu, FiTrash2, FiMic, FiMicOff, FiVideo, FiPhone } from 'react-icons/fi';
 import ReactMarkdown from 'react-markdown';
+import { createClient, AnamEvent } from '@anam-ai/js-sdk';
+import type { AnamClient } from '@anam-ai/js-sdk';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -20,6 +22,99 @@ export default function Chatbot() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
+
+  // Video call state
+  type CallState = 'idle' | 'ringing' | 'connecting' | 'connected' | 'ended';
+  const [callState, setCallState] = useState<CallState>('idle');
+  const [isMutedCall, setIsMutedCall] = useState(false);
+  const [callDuration, setCallDuration] = useState(0);
+  const [callError, setCallError] = useState<string | null>(null);
+  const anamClientRef = useRef<AnamClient | null>(null);
+  const callTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Video call helpers
+  const formatCallDuration = (seconds: number) => {
+    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s = (seconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+  };
+
+  const startCallTimer = useCallback(() => {
+    setCallDuration(0);
+    callTimerRef.current = setInterval(() => {
+      setCallDuration((prev) => prev + 1);
+    }, 1000);
+  }, []);
+
+  const stopCallTimer = useCallback(() => {
+    if (callTimerRef.current) {
+      clearInterval(callTimerRef.current);
+      callTimerRef.current = null;
+    }
+  }, []);
+
+  const endCall = useCallback(async () => {
+    stopCallTimer();
+    setCallState('ended');
+    try {
+      if (anamClientRef.current?.isStreaming()) {
+        await anamClientRef.current.stopStreaming();
+      }
+    } catch (err) {
+      console.error('Error stopping stream:', err);
+    }
+    anamClientRef.current = null;
+    setTimeout(() => {
+      setCallState('idle');
+      setCallDuration(0);
+    }, 2000);
+  }, [stopCallTimer]);
+
+  const startCall = async () => {
+    setCallError(null);
+    setCallState('ringing');
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setCallState('connecting');
+    try {
+      const res = await fetch('/api/video-session', { method: 'POST' });
+      if (!res.ok) throw new Error('Failed to get session token');
+      const { sessionToken } = await res.json();
+      const client = createClient(sessionToken);
+      anamClientRef.current = client;
+      client.addListener(AnamEvent.CONNECTION_ESTABLISHED, () => {
+        setCallState('connected');
+        startCallTimer();
+      });
+      client.addListener(AnamEvent.CONNECTION_CLOSED, () => {
+        endCall();
+      });
+      await client.streamToVideoElement('anam-video-chatbot');
+    } catch (err) {
+      console.error('Error starting video call:', err);
+      setCallError('Failed to connect. Please try again.');
+      setCallState('idle');
+    }
+  };
+
+  const toggleCallMute = () => {
+    if (!anamClientRef.current) return;
+    if (isMutedCall) {
+      anamClientRef.current.unmuteInputAudio();
+    } else {
+      anamClientRef.current.muteInputAudio();
+    }
+    setIsMutedCall(!isMutedCall);
+  };
+
+  // Clean up call on unmount
+  useEffect(() => {
+    return () => {
+      stopCallTimer();
+      if (anamClientRef.current?.isStreaming()) {
+        anamClientRef.current.stopStreaming();
+      }
+    };
+  }, [stopCallTimer]);
 
   // Send voice command
   const handleSendVoiceCommand = async (voiceInput: string) => {
@@ -424,16 +519,172 @@ export default function Chatbot() {
                     <p className="text-xs opacity-90">Ask me anything about Satyam</p>
                   </div>
                 </div>
-                <button
-                  onClick={clearChat}
-                  className="p-2 hover:bg-white/10 rounded-full transition-colors"
-                  title="Clear chat history"
-                  aria-label="Clear chat"
-                >
-                  <FiTrash2 size={18} />
-                </button>
+                <div className="flex items-center gap-1">
+                  <button
+                    onClick={startCall}
+                    disabled={callState !== 'idle'}
+                    className="p-2 hover:bg-white/10 rounded-full transition-colors disabled:opacity-50"
+                    title="Video call with AI Satyam"
+                    aria-label="Video call"
+                  >
+                    <FiVideo size={18} />
+                  </button>
+                  <button
+                    onClick={clearChat}
+                    className="p-2 hover:bg-white/10 rounded-full transition-colors"
+                    title="Clear chat history"
+                    aria-label="Clear chat"
+                  >
+                    <FiTrash2 size={18} />
+                  </button>
+                </div>
               </div>
             </div>
+
+            {/* Video Call Overlay (inside chat window) */}
+            <AnimatePresence>
+              {callState !== 'idle' && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className="absolute inset-0 z-20 bg-dark-secondary rounded-2xl overflow-hidden flex flex-col"
+                  style={{ backgroundColor: '#1e1e1e', zIndex: 20 }}
+                >
+                  {/* Video element */}
+                  <video
+                    id="anam-video-chatbot"
+                    autoPlay
+                    playsInline
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${callState === 'connected' ? 'opacity-100' : 'opacity-0'}`}
+                  />
+
+                  {/* Ringing / Connecting */}
+                  {(callState === 'ringing' || callState === 'connecting') && (
+                    <div className="flex-1 flex flex-col items-center justify-center">
+                      <motion.div
+                        animate={callState === 'ringing' ? {
+                          scale: [1, 1.1, 1],
+                          boxShadow: ['0 0 0 0 rgba(34,197,94,0.4)', '0 0 0 25px rgba(34,197,94,0)', '0 0 0 0 rgba(34,197,94,0)']
+                        } : {}}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                        className="w-24 h-24 rounded-full bg-dark-accent flex items-center justify-center mb-4 border-2 border-green-500/30"
+                        style={{ backgroundColor: '#2d2d2d' }}
+                      >
+                        <span className="text-3xl font-bold" style={{ color: '#6366f1' }}>S</span>
+                      </motion.div>
+                      <h3 className="text-lg font-semibold text-white mb-1">Satyam Regmi</h3>
+                      <motion.p
+                        animate={{ opacity: [1, 0.5, 1] }}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                        className="text-sm" style={{ color: '#9ca3af' }}
+                      >
+                        {callState === 'ringing' ? 'Ringing...' : 'Connecting...'}
+                      </motion.p>
+                      {callState === 'ringing' && (
+                        <div className="flex gap-2 mt-4">
+                          {[0, 1, 2].map((i) => (
+                            <motion.div
+                              key={i}
+                              animate={{ y: [0, -6, 0], opacity: [0.3, 1, 0.3] }}
+                              transition={{ duration: 0.8, repeat: Infinity, delay: i * 0.2 }}
+                              className="w-2 h-2 rounded-full bg-green-500"
+                            />
+                          ))}
+                        </div>
+                      )}
+                      {callState === 'connecting' && (
+                        <motion.div
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                          className="mt-4 w-7 h-7 border-2 border-t-transparent rounded-full"
+                          style={{ borderColor: '#6366f1', borderTopColor: 'transparent' }}
+                        />
+                      )}
+                    </div>
+                  )}
+
+                  {/* Connected top bar */}
+                  {callState === 'connected' && (
+                    <div className="absolute top-0 left-0 right-0 p-3 bg-gradient-to-b from-black/60 to-transparent z-10">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                          <span className="text-white text-xs font-medium">Satyam Regmi</span>
+                        </div>
+                        <span className="text-white/80 text-xs font-mono">{formatCallDuration(callDuration)}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Call Ended */}
+                  {callState === 'ended' && (
+                    <div className="flex-1 flex flex-col items-center justify-center">
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        className="w-16 h-16 rounded-full flex items-center justify-center mb-3"
+                        style={{ backgroundColor: 'rgba(239,68,68,0.2)' }}
+                      >
+                        <FiPhone size={28} className="text-red-400 rotate-[135deg]" />
+                      </motion.div>
+                      <p className="text-white text-base font-medium">Call Ended</p>
+                      <p className="text-sm mt-1" style={{ color: '#9ca3af' }}>{formatCallDuration(callDuration)}</p>
+                    </div>
+                  )}
+
+                  {/* Error */}
+                  {callError && (
+                    <div className="absolute top-3 left-3 right-3 rounded-lg px-3 py-2 text-sm text-center" style={{ backgroundColor: 'rgba(239,68,68,0.2)', border: '1px solid rgba(239,68,68,0.3)', color: '#fca5a5' }}>
+                      {callError}
+                    </div>
+                  )}
+
+                  {/* Call controls */}
+                  {(callState === 'ringing' || callState === 'connecting' || callState === 'connected') && (
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent z-10">
+                      <div className="flex items-center justify-center gap-5">
+                        {callState === 'connected' && (
+                          <motion.button
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={toggleCallMute}
+                            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                            style={{
+                              backgroundColor: isMutedCall ? 'white' : 'rgba(255,255,255,0.15)',
+                              color: isMutedCall ? 'black' : 'white',
+                            }}
+                          >
+                            {isMutedCall ? <FiMicOff size={18} /> : <FiMic size={18} />}
+                          </motion.button>
+                        )}
+                        <motion.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          onClick={endCall}
+                          className="w-14 h-14 rounded-full bg-red-500 hover:bg-red-600 text-white flex items-center justify-center shadow-lg transition-colors"
+                          style={{ boxShadow: '0 4px 14px rgba(239,68,68,0.3)' }}
+                        >
+                          <FiPhone size={22} className="rotate-[135deg]" />
+                        </motion.button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Close X */}
+                  {callState !== 'ended' && (
+                    <button
+                      onClick={endCall}
+                      className="absolute top-3 right-3 w-7 h-7 rounded-full flex items-center justify-center text-white transition-colors z-10"
+                      style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+                    >
+                      <FiX size={14} />
+                    </button>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             {/* Messages */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4" style={{ flex: 1, overflowY: 'auto', padding: '1rem', backgroundColor: '#1e1e1e' }}>
