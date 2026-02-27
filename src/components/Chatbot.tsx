@@ -439,56 +439,67 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* Chat Button */}
+      {/* Chat Button — Frosted glass pill */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-[9999] bg-gradient-to-r from-highlight-primary to-purple-500 text-white p-4 rounded-full shadow-2xl hover:shadow-highlight-primary/50 transition-all duration-300"
-        style={{ 
+        className="chatbot-fab"
+        style={{
           position: 'fixed',
           bottom: '1.5rem',
           right: '1.5rem',
           zIndex: 9999,
-          backgroundColor: '#6366f1',
-          color: 'white'
+          width: '56px',
+          height: '56px',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: 'linear-gradient(135deg, rgba(99,102,241,0.85), rgba(168,85,247,0.85))',
+          backdropFilter: 'blur(20px) saturate(180%)',
+          WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+          border: '1px solid rgba(255,255,255,0.18)',
+          color: 'white',
+          boxShadow: '0 8px 32px rgba(99,102,241,0.35), inset 0 1px 0 rgba(255,255,255,0.2)',
+          cursor: 'pointer',
         }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.92 }}
         aria-label="Toggle chatbot"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
             <motion.div
               key="close"
-              initial={{ rotate: 0 }}
-              animate={{ rotate: 90 }}
-              exit={{ rotate: 0 }}
+              initial={{ rotate: 0, opacity: 0 }}
+              animate={{ rotate: 90, opacity: 1 }}
+              exit={{ rotate: 0, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <FiX size={24} />
+              <FiX size={22} />
             </motion.div>
           ) : (
             <motion.div
               key="open"
-              initial={{ rotate: 90 }}
-              animate={{ rotate: 0 }}
-              exit={{ rotate: 90 }}
+              initial={{ rotate: 90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <FiMessageCircle size={24} />
+              <FiMessageCircle size={22} />
             </motion.div>
           )}
         </AnimatePresence>
       </motion.button>
 
-      {/* Chat Window */}
+      {/* Chat Window — Glass card */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            initial={{ opacity: 0, y: 24, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-[9998] w-96 max-w-[calc(100vw-3rem)] h-[600px] max-h-[calc(100vh-8rem)] bg-dark-secondary rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-dark-accent"
+            exit={{ opacity: 0, y: 24, scale: 0.92 }}
+            transition={{ type: 'spring', damping: 26, stiffness: 300 }}
+            className="chatbot-glass-window"
             style={{
               position: 'fixed',
               bottom: '6rem',
@@ -498,44 +509,95 @@ export default function Chatbot() {
               maxWidth: 'calc(100vw - 3rem)',
               height: '600px',
               maxHeight: 'calc(100vh - 8rem)',
-              backgroundColor: '#1e1e1e',
-              borderRadius: '1rem',
-              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
               display: 'flex',
               flexDirection: 'column',
               overflow: 'hidden',
-              border: '1px solid #2d2d2d',
+              borderRadius: '1.5rem',
+              background: 'rgba(15, 15, 20, 0.65)',
+              backdropFilter: 'blur(40px) saturate(180%)',
+              WebkitBackdropFilter: 'blur(40px) saturate(180%)',
+              border: '1px solid rgba(255,255,255,0.08)',
+              boxShadow: '0 32px 64px -16px rgba(0,0,0,0.6), 0 0 0 0.5px rgba(255,255,255,0.06) inset',
             }}
           >
-            {/* Header */}
-            <div className="bg-gradient-to-r from-highlight-primary to-purple-500 p-4 text-white" style={{ background: 'linear-gradient(to right, #6366f1, #a855f7)' }}>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-3">
-                  <div className="bg-white/20 p-2 rounded-full">
-                    <FiCpu size={20} />
+            {/* Header — Frosted iOS-style top bar */}
+            <div
+              style={{
+                padding: '1rem 1.125rem',
+                background: 'rgba(255,255,255,0.04)',
+                backdropFilter: 'blur(20px)',
+                WebkitBackdropFilter: 'blur(20px)',
+                borderBottom: '1px solid rgba(255,255,255,0.06)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div
+                    style={{
+                      width: '38px',
+                      height: '38px',
+                      borderRadius: '50%',
+                      background: 'linear-gradient(135deg, #6366f1, #a855f7)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 4px 12px rgba(99,102,241,0.3)',
+                    }}
+                  >
+                    <FiCpu size={18} color="white" />
                   </div>
                   <div>
-                    <h3 className="font-bold">AI Assistant</h3>
-                    <p className="text-xs opacity-90">Ask me anything about Satyam</p>
+                    <h3 style={{ fontWeight: 600, fontSize: '0.938rem', color: '#f3f4f6', margin: 0, letterSpacing: '-0.01em' }}>
+                      AI Assistant
+                    </h3>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', marginTop: '2px' }}>
+                      <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e', display: 'inline-block', boxShadow: '0 0 6px rgba(34,197,94,0.5)' }} />
+                      <p style={{ fontSize: '0.688rem', color: 'rgba(255,255,255,0.5)', margin: 0, fontWeight: 400 }}>Online</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-1">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                   <button
                     onClick={startCall}
                     disabled={callState !== 'idle'}
-                    className="p-2 hover:bg-white/10 rounded-full transition-colors disabled:opacity-50"
                     title="Video call with AI Satyam"
                     aria-label="Video call"
+                    style={{
+                      width: '34px',
+                      height: '34px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: 'rgba(255,255,255,0.06)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      color: 'rgba(255,255,255,0.7)',
+                      cursor: callState !== 'idle' ? 'not-allowed' : 'pointer',
+                      opacity: callState !== 'idle' ? 0.4 : 1,
+                      transition: 'all 0.2s',
+                    }}
                   >
-                    <FiVideo size={18} />
+                    <FiVideo size={15} />
                   </button>
                   <button
                     onClick={clearChat}
-                    className="p-2 hover:bg-white/10 rounded-full transition-colors"
                     title="Clear chat history"
                     aria-label="Clear chat"
+                    style={{
+                      width: '34px',
+                      height: '34px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: 'rgba(255,255,255,0.06)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      color: 'rgba(255,255,255,0.7)',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                    }}
                   >
-                    <FiTrash2 size={18} />
+                    <FiTrash2 size={15} />
                   </button>
                 </div>
               </div>
@@ -548,47 +610,75 @@ export default function Chatbot() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                  className="absolute inset-0 z-20 bg-dark-secondary rounded-2xl overflow-hidden flex flex-col"
-                  style={{ backgroundColor: '#1e1e1e', zIndex: 20 }}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    zIndex: 20,
+                    borderRadius: '1.5rem',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    background: 'rgba(10,10,15,0.85)',
+                    backdropFilter: 'blur(30px)',
+                    WebkitBackdropFilter: 'blur(30px)',
+                  }}
                 >
                   {/* Video element */}
                   <video
                     id="anam-video-chatbot"
                     autoPlay
                     playsInline
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${callState === 'connected' ? 'opacity-100' : 'opacity-0'}`}
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      transition: 'opacity 0.7s',
+                      opacity: callState === 'connected' ? 1 : 0,
+                    }}
                   />
 
                   {/* Ringing / Connecting */}
                   {(callState === 'ringing' || callState === 'connecting') && (
-                    <div className="flex-1 flex flex-col items-center justify-center">
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                       <motion.div
                         animate={callState === 'ringing' ? {
                           scale: [1, 1.1, 1],
                           boxShadow: ['0 0 0 0 rgba(34,197,94,0.4)', '0 0 0 25px rgba(34,197,94,0)', '0 0 0 0 rgba(34,197,94,0)']
                         } : {}}
                         transition={{ duration: 1.5, repeat: Infinity }}
-                        className="w-24 h-24 rounded-full bg-dark-accent flex items-center justify-center mb-4 border-2 border-green-500/30"
-                        style={{ backgroundColor: '#2d2d2d' }}
+                        style={{
+                          width: '80px',
+                          height: '80px',
+                          borderRadius: '50%',
+                          background: 'rgba(255,255,255,0.06)',
+                          backdropFilter: 'blur(10px)',
+                          border: '2px solid rgba(34,197,94,0.3)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          marginBottom: '1rem',
+                        }}
                       >
-                        <span className="text-3xl font-bold" style={{ color: '#6366f1' }}>S</span>
+                        <span style={{ fontSize: '1.75rem', fontWeight: 700, color: '#a78bfa' }}>S</span>
                       </motion.div>
-                      <h3 className="text-lg font-semibold text-white mb-1">Satyam Regmi</h3>
+                      <h3 style={{ fontSize: '1.125rem', fontWeight: 600, color: 'white', marginBottom: '0.25rem' }}>Satyam Regmi</h3>
                       <motion.p
                         animate={{ opacity: [1, 0.5, 1] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
-                        className="text-sm" style={{ color: '#9ca3af' }}
+                        style={{ fontSize: '0.813rem', color: '#9ca3af' }}
                       >
                         {callState === 'ringing' ? 'Ringing...' : 'Connecting...'}
                       </motion.p>
                       {callState === 'ringing' && (
-                        <div className="flex gap-2 mt-4">
+                        <div style={{ display: 'flex', gap: '6px', marginTop: '1rem' }}>
                           {[0, 1, 2].map((i) => (
                             <motion.div
                               key={i}
                               animate={{ y: [0, -6, 0], opacity: [0.3, 1, 0.3] }}
                               transition={{ duration: 0.8, repeat: Infinity, delay: i * 0.2 }}
-                              className="w-2 h-2 rounded-full bg-green-500"
+                              style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e' }}
                             />
                           ))}
                         </div>
@@ -597,8 +687,14 @@ export default function Chatbot() {
                         <motion.div
                           animate={{ rotate: 360 }}
                           transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                          className="mt-4 w-7 h-7 border-2 border-t-transparent rounded-full"
-                          style={{ borderColor: '#6366f1', borderTopColor: 'transparent' }}
+                          style={{
+                            marginTop: '1rem',
+                            width: '24px',
+                            height: '24px',
+                            border: '2px solid #6366f1',
+                            borderTopColor: 'transparent',
+                            borderRadius: '50%',
+                          }}
                         />
                       )}
                     </div>
@@ -606,54 +702,100 @@ export default function Chatbot() {
 
                   {/* Connected top bar */}
                   {callState === 'connected' && (
-                    <div className="absolute top-0 left-0 right-0 p-3 bg-gradient-to-b from-black/60 to-transparent z-10">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                          <span className="text-white text-xs font-medium">Satyam Regmi</span>
+                    <div style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      padding: '0.75rem',
+                      background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), transparent)',
+                      zIndex: 10,
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e', display: 'inline-block', animation: 'pulse 2s infinite' }} />
+                          <span style={{ color: 'white', fontSize: '0.75rem', fontWeight: 500 }}>Satyam Regmi</span>
                         </div>
-                        <span className="text-white/80 text-xs font-mono">{formatCallDuration(callDuration)}</span>
+                        <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem', fontFamily: 'ui-monospace, monospace' }}>{formatCallDuration(callDuration)}</span>
                       </div>
                     </div>
                   )}
 
                   {/* Call Ended */}
                   {callState === 'ended' && (
-                    <div className="flex-1 flex flex-col items-center justify-center">
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
-                        className="w-16 h-16 rounded-full flex items-center justify-center mb-3"
-                        style={{ backgroundColor: 'rgba(239,68,68,0.2)' }}
+                        style={{
+                          width: '56px',
+                          height: '56px',
+                          borderRadius: '50%',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          background: 'rgba(239,68,68,0.15)',
+                          marginBottom: '0.75rem',
+                        }}
                       >
-                        <FiPhone size={28} className="text-red-400 rotate-[135deg]" />
+                        <FiPhone size={24} style={{ color: '#f87171', transform: 'rotate(135deg)' }} />
                       </motion.div>
-                      <p className="text-white text-base font-medium">Call Ended</p>
-                      <p className="text-sm mt-1" style={{ color: '#9ca3af' }}>{formatCallDuration(callDuration)}</p>
+                      <p style={{ color: 'white', fontSize: '1rem', fontWeight: 500 }}>Call Ended</p>
+                      <p style={{ color: '#9ca3af', fontSize: '0.813rem', marginTop: '0.25rem' }}>{formatCallDuration(callDuration)}</p>
                     </div>
                   )}
 
                   {/* Error */}
                   {callError && (
-                    <div className="absolute top-3 left-3 right-3 rounded-lg px-3 py-2 text-sm text-center" style={{ backgroundColor: 'rgba(239,68,68,0.2)', border: '1px solid rgba(239,68,68,0.3)', color: '#fca5a5' }}>
+                    <div style={{
+                      position: 'absolute',
+                      top: '0.75rem',
+                      left: '0.75rem',
+                      right: '0.75rem',
+                      borderRadius: '0.75rem',
+                      padding: '0.5rem 0.75rem',
+                      fontSize: '0.813rem',
+                      textAlign: 'center',
+                      background: 'rgba(239,68,68,0.15)',
+                      border: '1px solid rgba(239,68,68,0.2)',
+                      color: '#fca5a5',
+                      backdropFilter: 'blur(10px)',
+                    }}>
                       {callError}
                     </div>
                   )}
 
                   {/* Call controls */}
                   {(callState === 'ringing' || callState === 'connecting' || callState === 'connected') && (
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent z-10">
-                      <div className="flex items-center justify-center gap-5">
+                    <div style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      padding: '1.25rem',
+                      background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent)',
+                      zIndex: 10,
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem' }}>
                         {callState === 'connected' && (
                           <motion.button
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             whileTap={{ scale: 0.9 }}
                             onClick={toggleCallMute}
-                            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
                             style={{
-                              backgroundColor: isMutedCall ? 'white' : 'rgba(255,255,255,0.15)',
+                              width: '44px',
+                              height: '44px',
+                              borderRadius: '50%',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              background: isMutedCall ? 'white' : 'rgba(255,255,255,0.12)',
+                              backdropFilter: 'blur(10px)',
+                              border: '1px solid rgba(255,255,255,0.1)',
                               color: isMutedCall ? 'black' : 'white',
+                              cursor: 'pointer',
+                              transition: 'all 0.2s',
                             }}
                           >
                             {isMutedCall ? <FiMicOff size={18} /> : <FiMic size={18} />}
@@ -663,10 +805,22 @@ export default function Chatbot() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={endCall}
-                          className="w-14 h-14 rounded-full bg-red-500 hover:bg-red-600 text-white flex items-center justify-center shadow-lg transition-colors"
-                          style={{ boxShadow: '0 4px 14px rgba(239,68,68,0.3)' }}
+                          style={{
+                            width: '52px',
+                            height: '52px',
+                            borderRadius: '50%',
+                            background: '#ef4444',
+                            color: 'white',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            boxShadow: '0 4px 14px rgba(239,68,68,0.4)',
+                            border: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s',
+                          }}
                         >
-                          <FiPhone size={22} className="rotate-[135deg]" />
+                          <FiPhone size={20} style={{ transform: 'rotate(135deg)' }} />
                         </motion.button>
                       </div>
                     </div>
@@ -676,10 +830,26 @@ export default function Chatbot() {
                   {callState !== 'ended' && (
                     <button
                       onClick={endCall}
-                      className="absolute top-3 right-3 w-7 h-7 rounded-full flex items-center justify-center text-white transition-colors z-10"
-                      style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+                      style={{
+                        position: 'absolute',
+                        top: '0.75rem',
+                        right: '0.75rem',
+                        width: '28px',
+                        height: '28px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'white',
+                        background: 'rgba(255,255,255,0.1)',
+                        backdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(255,255,255,0.1)',
+                        cursor: 'pointer',
+                        zIndex: 10,
+                        transition: 'all 0.2s',
+                      }}
                     >
-                      <FiX size={14} />
+                      <FiX size={13} />
                     </button>
                   )}
                 </motion.div>
@@ -687,72 +857,136 @@ export default function Chatbot() {
             </AnimatePresence>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4" style={{ flex: 1, overflowY: 'auto', padding: '1rem', backgroundColor: '#1e1e1e' }}>
+            <div
+              className="chatbot-messages-scroll"
+              style={{
+                flex: 1,
+                overflowY: 'auto',
+                padding: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem',
+              }}
+            >
               {messages.map((message, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                  transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  style={{
+                    display: 'flex',
+                    justifyContent: message.role === 'user' ? 'flex-end' : 'flex-start',
+                  }}
                 >
                   <div
-                    className={`flex items-start space-x-2 max-w-[85%] ${
-                      message.role === 'user' ? 'flex-row-reverse space-x-reverse' : ''
-                    }`}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'flex-end',
+                      gap: '0.5rem',
+                      maxWidth: '85%',
+                      flexDirection: message.role === 'user' ? 'row-reverse' : 'row',
+                    }}
                   >
+                    {/* Avatar */}
                     <div
-                      className={`p-2 rounded-full ${
-                        message.role === 'user'
-                          ? 'bg-highlight-primary text-white'
-                          : 'bg-dark-accent text-dark-muted'
-                      }`}
                       style={{
-                        padding: '0.5rem',
-                        borderRadius: '9999px',
-                        backgroundColor: message.role === 'user' ? '#6366f1' : '#2d2d2d',
-                        color: message.role === 'user' ? 'white' : '#9ca3af',
+                        width: '28px',
+                        height: '28px',
+                        minWidth: '28px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        background: message.role === 'user'
+                          ? 'linear-gradient(135deg, #6366f1, #a855f7)'
+                          : 'rgba(255,255,255,0.06)',
+                        border: message.role === 'user'
+                          ? 'none'
+                          : '1px solid rgba(255,255,255,0.08)',
+                        color: message.role === 'user' ? 'white' : 'rgba(255,255,255,0.5)',
+                        flexShrink: 0,
                       }}
                     >
-                      {message.role === 'user' ? <FiUser size={16} /> : <FiCpu size={16} />}
+                      {message.role === 'user' ? <FiUser size={13} /> : <FiCpu size={13} />}
                     </div>
+                    {/* Bubble */}
                     <div
-                      className={`p-3 rounded-2xl ${
-                        message.role === 'user'
-                          ? 'bg-highlight-primary text-white rounded-tr-none'
-                          : 'bg-dark-accent text-dark-text rounded-tl-none'
-                      }`}
                       style={{
-                        padding: '0.75rem',
-                        borderRadius: '1rem',
-                        backgroundColor: message.role === 'user' ? '#6366f1' : '#2d2d2d',
-                        color: message.role === 'user' ? 'white' : '#f3f4f6',
-                        borderTopRightRadius: message.role === 'user' ? '0.25rem' : '1rem',
-                        borderTopLeftRadius: message.role === 'user' ? '1rem' : '0.25rem',
+                        padding: '0.625rem 0.875rem',
+                        borderRadius: '1.125rem',
+                        borderTopRightRadius: message.role === 'user' ? '0.25rem' : '1.125rem',
+                        borderTopLeftRadius: message.role === 'user' ? '1.125rem' : '0.25rem',
+                        background: message.role === 'user'
+                          ? 'linear-gradient(135deg, #6366f1, #7c3aed)'
+                          : 'rgba(255,255,255,0.06)',
+                        backdropFilter: message.role === 'user' ? 'none' : 'blur(10px)',
+                        WebkitBackdropFilter: message.role === 'user' ? 'none' : 'blur(10px)',
+                        border: message.role === 'user'
+                          ? 'none'
+                          : '1px solid rgba(255,255,255,0.06)',
+                        color: message.role === 'user' ? 'white' : '#e5e7eb',
+                        boxShadow: message.role === 'user'
+                          ? '0 2px 12px rgba(99,102,241,0.25)'
+                          : '0 1px 4px rgba(0,0,0,0.1)',
                       }}
                     >
-                      <div className={`text-sm chatbot-markdown ${message.role === 'user' ? 'chatbot-markdown-user' : ''}`} style={{ fontSize: '0.875rem' }}>
+                      <div className={`chatbot-markdown ${message.role === 'user' ? 'chatbot-markdown-user' : ''}`} style={{ fontSize: '0.838rem', lineHeight: 1.5 }}>
                         <ReactMarkdown>{message.content}</ReactMarkdown>
                       </div>
                     </div>
                   </div>
                 </motion.div>
               ))}
+
+              {/* Typing indicator */}
               {isLoading && (
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="flex justify-start"
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  style={{ display: 'flex', justifyContent: 'flex-start' }}
                 >
-                  <div className="flex items-start space-x-2">
-                    <div className="bg-dark-accent text-dark-muted p-2 rounded-full">
-                      <FiCpu size={16} />
+                  <div style={{ display: 'flex', alignItems: 'flex-end', gap: '0.5rem' }}>
+                    <div
+                      style={{
+                        width: '28px',
+                        height: '28px',
+                        minWidth: '28px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        background: 'rgba(255,255,255,0.06)',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                        color: 'rgba(255,255,255,0.5)',
+                      }}
+                    >
+                      <FiCpu size={13} />
                     </div>
-                    <div className="bg-dark-accent p-3 rounded-2xl rounded-tl-none">
-                      <div className="flex space-x-1">
-                        <div className="w-2 h-2 bg-dark-muted rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                        <div className="w-2 h-2 bg-dark-muted rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                        <div className="w-2 h-2 bg-dark-muted rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                    <div
+                      style={{
+                        padding: '0.75rem 1rem',
+                        borderRadius: '1.125rem',
+                        borderTopLeftRadius: '0.25rem',
+                        background: 'rgba(255,255,255,0.06)',
+                        backdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(255,255,255,0.06)',
+                      }}
+                    >
+                      <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
+                        {[0, 1, 2].map((i) => (
+                          <motion.div
+                            key={i}
+                            animate={{ y: [0, -4, 0], opacity: [0.3, 0.8, 0.3] }}
+                            transition={{ duration: 0.8, repeat: Infinity, delay: i * 0.15, ease: 'easeInOut' }}
+                            style={{
+                              width: '6px',
+                              height: '6px',
+                              borderRadius: '50%',
+                              background: 'rgba(255,255,255,0.4)',
+                            }}
+                          />
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -761,44 +995,59 @@ export default function Chatbot() {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Quick Actions */}
+            {/* Quick Actions — iOS pill buttons */}
             {messages.length <= 1 && (
-              <div className="px-4 pb-2" style={{ padding: '0 1rem 0.5rem', backgroundColor: '#1e1e1e' }}>
-                <p className="text-xs text-dark-muted mb-2" style={{ fontSize: '0.75rem', color: '#9ca3af', marginBottom: '0.5rem' }}>Quick actions:</p>
-                <div className="flex flex-wrap gap-2" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div
+                style={{
+                  padding: '0 1rem 0.625rem',
+                }}
+              >
+                <p style={{ fontSize: '0.688rem', color: 'rgba(255,255,255,0.35)', marginBottom: '0.5rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Suggestions</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.375rem' }}>
                   {quickActions.map((action, index) => (
-                    <button
+                    <motion.button
                       key={index}
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 0.96 }}
                       onClick={() => {
                         setInput(action.message);
                         setTimeout(() => handleSend(), 100);
                       }}
-                      className="text-xs bg-dark-accent hover:bg-dark-accent/70 text-dark-text px-3 py-1.5 rounded-full transition-colors duration-200"
                       style={{
                         fontSize: '0.75rem',
-                        backgroundColor: '#2d2d2d',
-                        color: '#f3f4f6',
-                        padding: '0.375rem 0.75rem',
+                        fontWeight: 500,
+                        padding: '0.375rem 0.875rem',
                         borderRadius: '9999px',
-                        border: 'none',
+                        border: '1px solid rgba(255,255,255,0.1)',
+                        background: 'rgba(255,255,255,0.05)',
+                        backdropFilter: 'blur(8px)',
+                        color: 'rgba(255,255,255,0.7)',
                         cursor: 'pointer',
+                        transition: 'all 0.2s',
                       }}
                     >
                       {action.label}
-                    </button>
+                    </motion.button>
                   ))}
                 </div>
               </div>
             )}
 
-            {/* Input */}
-            <div className="p-4 border-t border-dark-accent" style={{ padding: '1rem', borderTop: '1px solid #2d2d2d', backgroundColor: '#1e1e1e' }}>
+            {/* Input — Frosted bottom bar */}
+            <div
+              style={{
+                padding: '0.75rem 1rem',
+                borderTop: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(255,255,255,0.03)',
+                backdropFilter: 'blur(20px)',
+                WebkitBackdropFilter: 'blur(20px)',
+              }}
+            >
               {isListening && (
                 <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="flex items-center justify-center space-x-2 mb-2 text-red-400 text-sm"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -806,80 +1055,94 @@ export default function Chatbot() {
                     gap: '0.5rem',
                     marginBottom: '0.5rem',
                     color: '#f87171',
-                    fontSize: '0.875rem',
+                    fontSize: '0.813rem',
                   }}
                 >
                   <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ repeat: Infinity, duration: 1.5 }}
+                    animate={{ scale: [1, 1.3, 1] }}
+                    transition={{ repeat: Infinity, duration: 1 }}
                   >
-                    <FiMic size={16} />
+                    <FiMic size={14} />
                   </motion.div>
-                  <span>Listening... Speak now</span>
+                  <span style={{ fontWeight: 500 }}>Listening...</span>
                 </motion.div>
               )}
-              <div className="flex space-x-2" style={{ display: 'flex', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 <input
                   ref={inputRef}
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder={isListening ? "Listening..." : "Type your message..."}
+                  placeholder={isListening ? 'Listening...' : 'Message...'}
                   disabled={isLoading || isListening}
-                  className="flex-1 bg-dark-accent text-dark-text placeholder-dark-muted px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-highlight-primary disabled:opacity-50"
                   style={{
                     flex: 1,
-                    backgroundColor: '#2d2d2d',
-                    color: '#f3f4f6',
-                    padding: '0.5rem 1rem',
+                    padding: '0.563rem 1rem',
                     borderRadius: '9999px',
                     outline: 'none',
-                    border: 'none',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    background: 'rgba(255,255,255,0.06)',
+                    color: '#f3f4f6',
+                    fontSize: '0.875rem',
+                    transition: 'all 0.2s',
+                    opacity: isLoading || isListening ? 0.5 : 1,
                   }}
                 />
                 {isVoiceSupported && (
                   <motion.button
                     onClick={toggleVoiceRecognition}
                     disabled={isLoading}
-                    className={`p-2 rounded-full transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${
-                      isListening 
-                        ? 'bg-red-500 text-white animate-pulse' 
-                        : 'bg-dark-accent text-dark-muted hover:bg-dark-accent/70'
-                    }`}
-                    aria-label={isListening ? "Stop voice recording" : "Start voice recording"}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.08 }}
+                    whileTap={{ scale: 0.92 }}
+                    aria-label={isListening ? 'Stop voice recording' : 'Start voice recording'}
                     style={{
-                      padding: '0.5rem',
-                      borderRadius: '9999px',
-                      border: 'none',
+                      width: '36px',
+                      height: '36px',
+                      minWidth: '36px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      border: isListening ? 'none' : '1px solid rgba(255,255,255,0.08)',
+                      background: isListening
+                        ? 'rgba(239,68,68,0.8)'
+                        : 'rgba(255,255,255,0.06)',
+                      color: isListening ? 'white' : 'rgba(255,255,255,0.5)',
                       cursor: isLoading ? 'not-allowed' : 'pointer',
-                      opacity: isLoading ? 0.5 : 1,
-                      backgroundColor: isListening ? '#ef4444' : '#2d2d2d',
-                      color: isListening ? 'white' : '#9ca3af',
+                      opacity: isLoading ? 0.4 : 1,
+                      transition: 'all 0.2s',
                     }}
                   >
-                    {isListening ? <FiMicOff size={20} /> : <FiMic size={20} />}
+                    {isListening ? <FiMicOff size={16} /> : <FiMic size={16} />}
                   </motion.button>
                 )}
-                <button
+                <motion.button
                   onClick={handleSend}
                   disabled={isLoading || !input.trim()}
-                  className="bg-gradient-to-r from-highlight-primary to-purple-500 text-white p-2 rounded-full hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.92 }}
                   aria-label="Send message"
                   style={{
-                    background: 'linear-gradient(to right, #6366f1, #a855f7)',
-                    color: 'white',
-                    padding: '0.5rem',
-                    borderRadius: '9999px',
+                    width: '36px',
+                    height: '36px',
+                    minWidth: '36px',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: isLoading || !input.trim()
+                      ? 'rgba(255,255,255,0.06)'
+                      : 'linear-gradient(135deg, #6366f1, #a855f7)',
                     border: 'none',
+                    color: isLoading || !input.trim() ? 'rgba(255,255,255,0.25)' : 'white',
                     cursor: isLoading || !input.trim() ? 'not-allowed' : 'pointer',
-                    opacity: isLoading || !input.trim() ? 0.5 : 1,
+                    boxShadow: isLoading || !input.trim() ? 'none' : '0 2px 10px rgba(99,102,241,0.3)',
+                    transition: 'all 0.2s',
                   }}
                 >
-                  <FiSend size={20} />
-                </button>
+                  <FiSend size={16} />
+                </motion.button>
               </div>
             </div>
           </motion.div>
