@@ -1,0 +1,3200 @@
+[
+    {
+      "name": "रेडियो कान्तिपुर",
+      "frequency": "96.1 MHz",
+      "slug": "radio-kantipur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kantipur.png",
+      "audio_stream_url": "https://radio-broadcast.ekantipur.com/stream"
+    },
+    {
+      "name": "उज्यालो रेडियो नेटवर्क",
+      "frequency": "90 MHz",
+      "slug": "ujyaalo-radio-network",
+      "image": "https://npcdn.ratopati.com/media/radio/ujyaalo-radio-network.png",
+      "audio_stream_url": "https://stream.zeno.fm/wtuvp08xq1duv"
+    },
+    {
+      "name": "बीबीसी नेपाली रेडियो",
+      "frequency": "103 MHz",
+      "slug": "bbc-nepali-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/bbc-nepali-radio.png",
+      "audio_stream_url": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlow/ak/bbc_nepali_radio.m3u8"
+    },
+    {
+      "name": "रेडियो नेपाल",
+      "frequency": "100 MHz",
+      "slug": "radio-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nepal.png",
+      "audio_stream_url": "https://stream1.radionepal.gov.np/live/"
+    },
+    {
+      "name": "हिट्स एफएम",
+      "frequency": "Unknown",
+      "slug": "hits-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/hits-fm.png",
+      "audio_stream_url": "https://usa15.fastcast4u.com/proxy/hitsfm912?mp=/1"
+    },
+    {
+      "name": "बीबीसी विश्व सेवा",
+      "frequency": "103 MHz",
+      "slug": "bbc-world-service",
+      "image": "https://npcdn.ratopati.com/media/radio/bbc-world-service.png",
+      "audio_stream_url": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlow/ak/bbc_world_service_news_internet.m3u8"
+    },
+    {
+      "name": "सामुदायिक सूचना नेटवर्क - CIN",
+      "frequency": "Unknown",
+      "slug": "community-information-network-cin",
+      "image": "https://npcdn.ratopati.com/media/radio/community-information-network-cin.png",
+      "audio_stream_url": "https://streaming.softnep.net:10996/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "कालिका एफएम",
+      "frequency": "95.2 MHz",
+      "slug": "kalika-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/kalika-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10828/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "कालिका एफएम म्युजिकल",
+      "frequency": "91 MHz",
+      "slug": "kalika-fm-musical",
+      "image": "https://npcdn.ratopati.com/media/radio/kalika-fm-musical.png",
+      "audio_stream_url": "https://streaming.softnep.net:10828/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो अन्नपूर्ण नेपाल",
+      "frequency": "94 MHz",
+      "slug": "radio-annapurna-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-annapurna-nepal.png",
+      "audio_stream_url": "https://shoutcast.prixa.live/annapurna"
+    },
+    {
+      "name": "रेडियो काठमाडौं",
+      "frequency": "92.1 MHz",
+      "slug": "radio-kathmandu",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kathmandu.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8064/stream"
+    },
+    {
+      "name": "तिलोत्तमा एफएम",
+      "frequency": "Unknown",
+      "slug": "tilottama-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/tilottama-fm.png",
+      "audio_stream_url": "https://live.itech.host:4585/stream"
+    },
+    {
+      "name": "रेडियो सिटी",
+      "frequency": "Unknown",
+      "slug": "radio-city",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-city.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8036/stream"
+    },
+    {
+      "name": "नेपालीको रेडियो",
+      "frequency": "88.8 MHz",
+      "slug": "nepaliko-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/nepaliko-radio.png",
+      "audio_stream_url": "http://streaming.webhostnepal.com:9888/"
+    },
+    {
+      "name": "मेट्रो एफ एम",
+      "frequency": "94.6 MHz",
+      "slug": "metro-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/metro-fm.png",
+      "audio_stream_url": "https://astream.nepalipatro.com.np:8263/index.html"
+    },
+    {
+      "name": "रेडियो बुंगल एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-bungal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bungal-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/1112/radio.mp3"
+    },
+    {
+      "name": "स्वदेश एफएम",
+      "frequency": "93.2 MHz",
+      "slug": "swadesh-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/swadesh-fm.png",
+      "audio_stream_url": "https://stream-43.zeno.fm/xm2babvnephvv"
+    },
+    {
+      "name": "अन्नपूर्ण एफएम",
+      "frequency": "93.4 MHz",
+      "slug": "annapurna-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/annapurna-fm.png",
+      "audio_stream_url": "https://live.itech.host:8969/stream"
+    },
+    {
+      "name": "धडकन एफ एम",
+      "frequency": "Unknown",
+      "slug": "dhadkan-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhadkan-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8112"
+    },
+    {
+      "name": "जयपृथ्वी एफएम",
+      "frequency": "96.3 MHz",
+      "slug": "jayprithivi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/jayprithivi-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10824/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो तमोर",
+      "frequency": "Unknown",
+      "slug": "radio-tamor",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tamor.png",
+      "audio_stream_url": "https://live.itech.host:8945/stream"
+    },
+    {
+      "name": "रेडियो कालिञ्चोक",
+      "frequency": "Unknown",
+      "slug": "radio-kalinchowk",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kalinchowk.png",
+      "audio_stream_url": "https://streaming.softnep.net:10967/;stream"
+    },
+    {
+      "name": "ए वन एफएम",
+      "frequency": "99 MHz",
+      "slug": "a-one-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/a-one-fm.png",
+      "audio_stream_url": "http://stream.zeno.fm/0ghbmuim5brvv"
+    },
+    {
+      "name": "रेडियो वीरगन्ज",
+      "frequency": "99 MHz",
+      "slug": "radio-birgunj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-birgunj.png",
+      "audio_stream_url": "https://streaming.softnep.net:10991/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "हजुरको रेडियो",
+      "frequency": "102.1 MHz",
+      "slug": "hajurko-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/hajurko-radio.png",
+      "audio_stream_url": "https://live.itech.host:9520/stream"
+    },
+    {
+      "name": "रेडियो मनोरन्जन",
+      "frequency": "Unknown",
+      "slug": "radio-entertainment",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-entertainment.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8016/stream"
+    },
+    {
+      "name": "रेडियो अध्यात्मज्योति",
+      "frequency": "104.8 MHz",
+      "slug": "radio-adhyatma-jyoti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-adhyatma-jyoti.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8074"
+    },
+    {
+      "name": "रेडियो रेसुंगा",
+      "frequency": "106.2 MHz",
+      "slug": "radio-resunga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-resunga.png",
+      "audio_stream_url": "https://live.itech.host:3260/stream"
+    },
+    {
+      "name": "रेडियो हाम्रो पहुँच",
+      "frequency": "89 MHz",
+      "slug": "radio-hamro-pahunch",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-hamro-pahunch.png",
+      "audio_stream_url": "https://live.itech.host:8693/stream"
+    },
+    {
+      "name": "रेडियो मलंगवा",
+      "frequency": "95.6 MHz",
+      "slug": "radio-malangawa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-malangawa.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8711"
+    },
+    {
+      "name": "रेडियो शारदा",
+      "frequency": "99.2 MHz",
+      "slug": "radio-sharada",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-sharada_mr6oMJugme.jpg",
+      "audio_stream_url": "https://live.itech.host:9448/stream"
+    },
+    {
+      "name": "बुटवल एफएम",
+      "frequency": "94.4 MHz",
+      "slug": "butwal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/butwal-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10994/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो अर्थ सरोकार",
+      "frequency": "Unknown",
+      "slug": "radio-artha-sarokar",
+      "image": "https://npcdn.ratopati.com/media/radios/artha-sarokar_JX7fWSftk0.jpg",
+      "audio_stream_url": "https://live.itech.host:2440/stream"
+    },
+    {
+      "name": "सप्तकोशी एफएम",
+      "frequency": "90 MHz",
+      "slug": "saptakoshi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saptakoshi-fm.png",
+      "audio_stream_url": "https://live.itech.host:4535/stream"
+    },
+    {
+      "name": "रेडियो दिदीबहिनी",
+      "frequency": "95.2 MHz",
+      "slug": "radio-didibahini",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-didibahini.png",
+      "audio_stream_url": "https://live.itech.host:8326/stream"
+    },
+    {
+      "name": "मिथिलाञ्चल एफएम",
+      "frequency": "105 MHz",
+      "slug": "mithilanchal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/mithilanchal-fm.png",
+      "audio_stream_url": "https://live.itech.host:8645/stream"
+    },
+    {
+      "name": "हिमाल एफएम",
+      "frequency": "Unknown",
+      "slug": "himal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/himal-fm.png",
+      "audio_stream_url": "https://sonic-ca.instainternet.com/8012/stream"
+    },
+    {
+      "name": "रेडियो धनगढी",
+      "frequency": "90.5 MHz",
+      "slug": "radio-dhangadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dhangadhi.png",
+      "audio_stream_url": "https://astream.nepalipatro.com.np:8233/index.html"
+    },
+    {
+      "name": "रेडियो नेपालबानी",
+      "frequency": "94.9 MHz",
+      "slug": "radio-nepalbani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nepalbani.png",
+      "audio_stream_url": "https://live.itech.host:8681/stream"
+    },
+ 
+    {
+      "name": "निलकन्ठ एफएम",
+      "frequency": "98.5 MHz",
+      "slug": "neelkantha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/neelkantha-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10872/stream"
+    },
+    {
+      "name": "धुर्वतरा एफएम",
+      "frequency": "89.8 MHz",
+      "slug": "dhurbatara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhurbatara-fm.png",
+      "audio_stream_url": "https://live.itech.host:8839/stream"
+    },
+    {
+      "name": "सोलु एफएम",
+      "frequency": "101.2 MHz",
+      "slug": "solu-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/solu-fm.png",
+      "audio_stream_url": "https://live.itech.host:9550/stream"
+    },
+    {
+      "name": "रेडियो होलेरी",
+      "frequency": "102.5 MHz",
+      "slug": "radio-holeri",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-holeri.png",
+      "audio_stream_url": "https://stream-153.zeno.fm/wm6khfwvdf9uv"
+    },
+    {
+      "name": "रेडियो सानोभेरी एफ एम",
+      "frequency": "100.8 MHz",
+      "slug": "radio-sanobheri-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sanobheri-fm.png",
+      "audio_stream_url": "https://live.itech.host:9430/stream"
+    },
+    {
+      "name": "बि एफएम",
+      "frequency": "91.2 MHz",
+      "slug": "bfm",
+      "image": "https://npcdn.ratopati.com/media/radio/bfm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8064/stream"
+    },
+    {
+      "name": "रेडियो सारथी",
+      "frequency": "Unknown",
+      "slug": "radio-sarathi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sarathi.png",
+      "audio_stream_url": "https://live.itech.host:9472/stream"
+    },
+    
+    {
+      "name": "रेडियो दार्चुला एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-darchula-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-darchula-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10951/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो बैतडी",
+      "frequency": "Unknown",
+      "slug": "radio-baitadi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-baitadi.png",
+      "audio_stream_url": "http://95.217.153.73:8044/index.html?sid=1"
+    },
+    {
+      "name": "रेडियो साइपाल एफएम",
+      "frequency": "100.6 MHz",
+      "slug": "saipal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saipal-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10915/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "खाँदबारी एफएम",
+      "frequency": "Unknown",
+      "slug": "khandbari-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/khandbari-fm.png",
+      "audio_stream_url": "http://live.itechnepal.com:8286/stream"
+    },
+    {
+      "name": "शुक्लागण्डकी एफएम",
+      "frequency": "97.6 MHz",
+      "slug": "shuklagandaki-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/shuklagandaki-fm.png",
+      "audio_stream_url": "https://live.itech.host:7137/stream"
+    },
+    {
+      "name": "रेडियो कर्णाली आवाज",
+      "frequency": "Unknown",
+      "slug": "radio-karnali-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-karnali-aawaj.png",
+      "audio_stream_url": "https://streaming.softnep.net:10979/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो बुद्ध आवाज",
+      "frequency": "89.6 MHz",
+      "slug": "radio-buddha-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-buddha-aawaj.png",
+      "audio_stream_url": "https://live.itech.host:9358/stream"
+    },
+    {
+      "name": "रेडियो सुदुर आवाज",
+      "frequency": "95 MHz",
+      "slug": "radio-sudur-awaz",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sudur-awaz.png",
+      "audio_stream_url": "https://live.itech.host:8639/stream"
+    },
+    {
+      "name": "रेडियो अलिभ नेपाल",
+      "frequency": "Unknown",
+      "slug": "radio-olive-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-olive-nepal.png",
+      "audio_stream_url": "https://18313.live.streamtheworld.com/RADIO_OLIVE_HITS_S02AAC.aac"
+    },
+    {
+      "name": "रेडियो टाइगर",
+      "frequency": "99.2 MHz",
+      "slug": "radio-tiger",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tiger.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8637/radio.mp3"
+    },
+    {
+      "name": "एभरेष्ट एफएम",
+      "frequency": "93 MHz",
+      "slug": "everest-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/everest-fm.png",
+      "audio_stream_url": "https://live.itech.host:5005/stream"
+    },
+    {
+      "name": "बुलबुले एफएम",
+      "frequency": "Unknown",
+      "slug": "bulbule-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bulbule-fm.png",
+      "audio_stream_url": "https://live.itech.host:8385/stream"
+    },
+    {
+      "name": "रेडियो भेरी",
+      "frequency": "98.6 MHz",
+      "slug": "radio-bheri",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bheri.png",
+      "audio_stream_url": "https://live.itech.host:9065/stream"
+    },
+    {
+      "name": "बिन्दास एफएम",
+      "frequency": "94.8 MHz",
+      "slug": "bindash-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bindash-fm.png",
+      "audio_stream_url": "https://liveradio.lexiconcpl.com:8443/radiobindaas.mp3"
+    },
+    {
+      "name": "टीकापुर एफएम",
+      "frequency": "Unknown",
+      "slug": "tikapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/tikapur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9519/live"
+    },
+    {
+      "name": "रुरु एफएम",
+      "frequency": "94.8 MHz",
+      "slug": "ruru-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ruru-fm.png",
+      "audio_stream_url": "http://stream.zeno.fm/be8hr3kr44zuv/;"
+    },
+    {
+      "name": "रेडियो अमरगढी",
+      "frequency": "97.4 MHz",
+      "slug": "radio-amargadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-amargadhi.png",
+      "audio_stream_url": "https://live.itech.host:8927/stream"
+    },
+    {
+      "name": "सी एफएम",
+      "frequency": "94.7 MHz",
+      "slug": "c-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/c-fm.png",
+      "audio_stream_url": "https://live.itech.host:8391/live"
+    },
+    {
+      "name": "रेडियो भोजपुर",
+      "frequency": "9308 MHz",
+      "slug": "radio-bhojpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bhojpur.png",
+      "audio_stream_url": "http://live.itechnepal.com:9078/stream?type=.mp3"
+    },
+    {
+      "name": "रेडियो जय मधेश",
+      "frequency": "93.5 MHz",
+      "slug": "radio-jay-madhesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jay-madhesh.png",
+      "audio_stream_url": "https://live.itech.host:3140/stream"
+    },
+    {
+      "name": "रेडियो सूर्यमुखी",
+      "frequency": "Unknown",
+      "slug": "radio-suryamukhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-suryamukhi.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8030/radio.mp3"
+    },
+    {
+      "name": "ढुकढुकी एफएम",
+      "frequency": "Unknown",
+      "slug": "dhukdhuki-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhukdhuki-fm.png",
+      "audio_stream_url": "https://streaming.shoutcast.com/dhukdhukifm"
+    },
+    {
+      "name": "रेडियो संकेत",
+      "frequency": "Unknown",
+      "slug": "radio-sanket",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sanket.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8523"
+    },
+
+    {
+      "name": "पाथीभरा एफएम",
+      "frequency": "Unknown",
+      "slug": "pathibhara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/pathibhara-fm.png",
+      "audio_stream_url": "https://live.itech.host:8749/stream"
+    },
+    {
+      "name": "रेडियो पश्चिम टुडे",
+      "frequency": "Unknown",
+      "slug": "radio-paschim-today",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-paschim-today.png",
+      "audio_stream_url": "https://live.itech.host:3240/stream"
+    },
+    {
+      "name": "रेडियो सुसेली",
+      "frequency": "Unknown",
+      "slug": "radio-suseli",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-suseli.png",
+      "audio_stream_url": "https://live.itech.host:8851/stream?1708590853307"
+    },
+
+    {
+      "name": "रेडियो एकता",
+      "frequency": "92.4 MHz",
+      "slug": "radio-ekata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-ekata.png",
+      "audio_stream_url": "https://live.itech.host:1810/stream"
+    },
+    {
+      "name": "रेडियो समाबेसि",
+      "frequency": "105 MHz",
+      "slug": "radio-samabeshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samabeshi.png",
+      "audio_stream_url": "https://live.itech.host:9382/stream"
+    },
+  
+    {
+      "name": "गल्कोट एफएम",
+      "frequency": "Unknown",
+      "slug": "galkot-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/galkot-fm.png",
+      "audio_stream_url": "https://live.itech.host:1270/stream"
+    },
+    {
+      "name": "मनकामना एफएम",
+      "frequency": "98.7 MHz",
+      "slug": "manakamana-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/manakamana-fm.png",
+      "audio_stream_url": "https://live.itech.host:1855/stream"
+    },
+    {
+      "name": "रेडियो पाल्पा",
+      "frequency": "97.1 MHz",
+      "slug": "radio-palpa",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-palpa_ysHXnzPTuI.jpg",
+      "audio_stream_url": "http://216.55.141.189:8467/;stream/1"
+    },
+    {
+      "name": "रेडियो प्रकृति",
+      "frequency": "Unknown",
+      "slug": "radio-prakriti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-prakriti.png",
+      "audio_stream_url": "https://live.itech.host:8939/stream"
+    },
+    {
+      "name": "रेडियो पुष्पाञ्जली",
+      "frequency": "97.4 MHz",
+      "slug": "radio-puspanjali",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-puspanjali.png",
+      "audio_stream_url": "https://live.itech.host:2945/stream"
+    },
+    {
+      "name": "शुक्लाफाँटा एफएम",
+      "frequency": "99.4 MHz",
+      "slug": "suklafanta-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/suklafanta-fm.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8010/stream"
+    },
+    {
+      "name": "रेडियो मध्यश्चिम",
+      "frequency": "91.4 MHz",
+      "slug": "radio-madhya-paschim",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-madhya-paschim.png",
+      "audio_stream_url": "https://live.itech.host:9011/stream?1672308617629"
+    },
+ 
+    {
+      "name": "रेडियो राजमार्ग",
+      "frequency": "Unknown",
+      "slug": "radio-rajmarg",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rajmarg.png",
+      "audio_stream_url": "https://streaming.softnep.net:10851/;stream.nsv&type=mp3&volume=70"
+    },
+   
+    {
+      "name": "क्यापिटल एफ.एम.",
+      "frequency": "92.4 MHz",
+      "slug": "capital-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/capital-fm-92.4_1EhIRCQkd2.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10982/;stream.nsv&type=mp3&volume=10"
+    },
+    {
+      "name": "रेडियो हापुरे",
+      "frequency": "Unknown",
+      "slug": "radio-hapure",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-hapure.png",
+      "audio_stream_url": "https://stream-153.zeno.fm/n8ey05ydbxhvv"
+    },
+    {
+      "name": "रेडियो नमस्ते- कैलाली",
+      "frequency": "96.5 MHz",
+      "slug": "radio-namaste-kailali",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-namaste-kailali.png",
+      "audio_stream_url": "https://live.itech.host:8343/stream"
+    },
+    {
+      "name": "रेडियो साहिनो",
+      "frequency": "Unknown",
+      "slug": "radio-sahino",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sahino.png",
+      "audio_stream_url": "https://live.itech.host:7098/stream"
+    },
+    {
+      "name": "बिस्वास एफएम",
+      "frequency": "93.6 MHz",
+      "slug": "biswas-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/biswas-fm.png",
+      "audio_stream_url": "https://stream-150.zeno.fm/t7d0knup6x8uv"
+    },
+    {
+      "name": "रेडियो पौरखी",
+      "frequency": "90.4 MHz",
+      "slug": "radio-paurakhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-paurakhi.png",
+      "audio_stream_url": "https://live.itech.host:8903/stream"
+    },
+    {
+      "name": "रेडियो आठराई",
+      "frequency": "101.2 MHz",
+      "slug": "radio-athrai",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-athrai.png",
+      "audio_stream_url": "https://live.itech.host:4845/stream"
+    },
+    {
+      "name": "रेडियो सिमरा",
+      "frequency": "91.2 MHz",
+      "slug": "radio-simara",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-simara.png",
+      "audio_stream_url": "https://streaming.softnep.net:10925/"
+    },
+    {
+      "name": "हलेसी एफएम",
+      "frequency": "102.4 MHz",
+      "slug": "halesi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/halesi-fm.png",
+      "audio_stream_url": "http://185.181.63.148:8010/halesifm"
+    },
+    {
+      "name": "रेडियो राष्ट्रिय एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-rastriya-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rastriya-fm.png",
+      "audio_stream_url": "http://192.227.85.169:4753/;"
+    },
+    {
+      "name": "रेडियो लाङटाङ",
+      "frequency": "90.3 MHz",
+      "slug": "radio-langtang",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-langtang.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8032"
+    },
+    {
+      "name": "इच्छाकामना एफ.एम",
+      "frequency": "102.4 MHz",
+      "slug": "ichchhakamana-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/-ichchhakamana-fm_HI4VDk4nIq.png",
+      "audio_stream_url": "https://streaming.softnep.net:10982/;stream.nsv&type=mp3&volume=10"
+    },
+    {
+      "name": "रेडियो मिशन",
+      "frequency": "105.3 MHz",
+      "slug": "radio-mission",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-mission.png",
+      "audio_stream_url": "https://centova1.toofancom.com/proxy/radiomission?mp=/stream"
+    },
+    {
+      "name": "रेडियो काबेली",
+      "frequency": "Unknown",
+      "slug": "radio-kabeli",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kabeli.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8028/stream"
+    },
+    {
+      "name": "रेडियो जननी",
+      "frequency": "90.6 MHz",
+      "slug": "radio-janani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-janani.png",
+      "audio_stream_url": "https://live.itech.host:8773/stream"
+    },
+    {
+      "name": "रेडियो डोटी",
+      "frequency": "98.5 MHz",
+      "slug": "radio-doti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-doti.png",
+      "audio_stream_url": "https://live.itech.host:4735/stream"
+    },
+    {
+      "name": "नवलपुर एफएम",
+      "frequency": "104.7 MHz",
+      "slug": "nawalpur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/nawalpur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9376/stream"
+    },
+    {
+      "name": "रेडियो अमुर्त",
+      "frequency": "91.6 MHz",
+      "slug": "radio-amurta",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-amurta.png",
+      "audio_stream_url": "http://95.217.153.73:8004/stream"
+    },
+    {
+      "name": "रेडियो श्रृङ्गेश्वर एफ.एम",
+      "frequency": "Unknown",
+      "slug": "radio-shringeshwar-fm-sfm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-shringeshwar-fm-sfm.png",
+      "audio_stream_url": "https://stream-150.zeno.fm/1qgfbe6sz1zuv?zs=Tfq1BITbTICFRYiuhQwXpg"
+    },
+    {
+      "name": "रेडियो कृष्णसार",
+      "frequency": "94 MHz",
+      "slug": "radio-krishnasar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-krishnasar.png",
+      "audio_stream_url": "https://live.itech.host:8434/stream"
+    },
+  
+    {
+      "name": "शुभेक्षा एफ.एम.",
+      "frequency": "Unknown",
+      "slug": "shubheksha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/shubheksha-fm.png",
+      "audio_stream_url": "https://eu9.fastcast4u.com/proxy/sujanpremi?mp=/1"
+    },
+    {
+      "name": "रेडियो सम्बृद्ध नेपाल",
+      "frequency": "92.6 MHz",
+      "slug": "radio-sambridha-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sambridha-nepal.png",
+      "audio_stream_url": "https://live.itech.host:4865/stream"
+    },
+    {
+      "name": "रेडियो सुनकोशी",
+      "frequency": "105.6 MHz",
+      "slug": "radio-sunkoshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sunkoshi.png",
+      "audio_stream_url": "https://live.itech.host:8743/stream"
+    },
+    
+    {
+      "name": "रेडियो कञ्चनपुर",
+      "frequency": "Unknown",
+      "slug": "radio-kanchanpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kanchanpur.png",
+      "audio_stream_url": "https://live.itech.host:8299/stream"
+    },
+    {
+      "name": "संबाद एफएम",
+      "frequency": "98.3 MHz",
+      "slug": "radio-sambad",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sambad.png",
+      "audio_stream_url": "https://stream.hamropatro.com/5509/radio.mp3"
+    },
+   
+    {
+      "name": "रेडियो रोधी",
+      "frequency": "Unknown",
+      "slug": "radio-rodhi-online",
+      "image": "https://npcdn.ratopati.com/media/radios/rodhi-radio_vjcWuaO88F.jpg",
+      "audio_stream_url": "https://stream.hamropatro.com/8661"
+    },
+    {
+      "name": "रेडियो मकवानपुरगढी",
+      "frequency": "95 MHz",
+      "slug": "radio-makawanpurgadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-makawanpurgadhi.png",
+      "audio_stream_url": "http://streaming.hamropatro.com:8767/"
+    },
+   
+    {
+      "name": "इलाम एफएम",
+      "frequency": "93 MHz",
+      "slug": "ilam-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ilam-fm.png",
+      "audio_stream_url": "http://live.itechnepal.com:9635/stream"
+    },
+    {
+      "name": "रेडियो रास्ट्रिय सन्देश",
+      "frequency": "Unknown",
+      "slug": "radio-ratriya-sanesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-ratriya-sanesh.png",
+      "audio_stream_url": "http://stream.zeno.fm/qe715t14gwzuv"
+    },
+    {
+      "name": "रेडियो सौराह",
+      "frequency": "Unknown",
+      "slug": "radio-sauraha",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sauraha.png",
+      "audio_stream_url": "https://streaming.softnep.net:10827/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो शभ्यता",
+      "frequency": "99.5 MHz",
+      "slug": "radio-shabhyata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-shabhyata.png",
+      "audio_stream_url": "http://sp14.instainternet.com:8028/stream"
+    },
+   
+    {
+      "name": "रेडियो नागरिक (मोरङ)",
+      "frequency": "100.4 MHz",
+      "slug": "radio-nagarik-morang",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nagarik-morang.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8100/stream"
+    },
+    {
+      "name": "मौराखारा एफएम",
+      "frequency": "106.5 MHz",
+      "slug": "mourakhara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/mourakhara-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10882/;stream.nsv&amp;type=mp3"
+    },
+    {
+      "name": "रेडियो स्वाभिमान",
+      "frequency": "Unknown",
+      "slug": "radio-swabhiman",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-swabhiman.png",
+      "audio_stream_url": "https://ec1.everestcast.host:1225/stream?type=.mp3"
+    },
+   
+    {
+      "name": "रेडियो उदयपुर",
+      "frequency": "102.4 MHz",
+      "slug": "radio-udaypur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-udaypur.png",
+      "audio_stream_url": "http://streaming.hamropatro.com:8021/;stream.mp3"
+    },
+    {
+      "name": "सिनर्जी एफएम",
+      "frequency": "Unknown",
+      "slug": "synergy-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/synergy-fm.png",
+      "audio_stream_url": "https://live.itech.host:3880/stream"
+    },
+    {
+      "name": "बज्जिका एफ एम",
+      "frequency": "99.4 MHz",
+      "slug": "bajjika-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bajjika-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8052/stream"
+    },
+    {
+      "name": "रेडियो डोल्पा एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-dolpa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dolpa.png",
+      "audio_stream_url": "https://live.itech.host:8337/stream"
+    },
+    {
+      "name": "रेडियो बंगलाचुली",
+      "frequency": "91.7 MHz",
+      "slug": "radio-bangalachuli",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-bangalachuli_K5553jOKUN.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10826/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "रेडियो कोहलपुर",
+      "frequency": "101.5 MHz",
+      "slug": "radio-kohalpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kohalpur.png",
+      "audio_stream_url": "https://streaming.softnep.net:10943/;stream.nsv&type=mp3"
+    },
+  
+    {
+      "name": "रेडियो समग्र मधेश",
+      "frequency": "90.4 MHz",
+      "slug": "radio-samagra-madhesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samagra-madhesh.png",
+      "audio_stream_url": "http://streaming.softnep.net:10922/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "असल साथी रेडियो",
+      "frequency": "98.9 MHz",
+      "slug": "asal-sathi-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/asal-sathi-radio.png",
+      "audio_stream_url": "https://stream-155.zeno.fm/0whuy4nsfa1uv"
+    },
+    {
+      "name": "रेडियो बिराट",
+      "frequency": "88.5 MHz",
+      "slug": "radio-birat",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-birat.png",
+      "audio_stream_url": "https://live.itech.host:9173/stream?1677054017365"
+    },
+   
+    {
+      "name": "रेडियो जनसञ्चार",
+      "frequency": "17.9 MHz",
+      "slug": "radio-jansanchar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jansanchar.png",
+      "audio_stream_url": "https://online.net.np/8116/stream"
+    },
+    
+    {
+      "name": "रेडियो सैलुङ",
+      "frequency": "92.7 MHz",
+      "slug": "radio-sailung",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sailung.png",
+      "audio_stream_url": "https://live.itech.host:9179/stream"
+    },
+    {
+      "name": "रेडियो उपत्यका",
+      "frequency": "87.6 MHz",
+      "slug": "radio-upatyaka",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-upatyaka.png",
+      "audio_stream_url": "https://onlinebroadcast.com.np/8g5vbvllzz8tv"
+    },
+  
+    {
+      "name": "रेडियो साझा चौतारी-  अनलाईन",
+      "frequency": "Unknown",
+      "slug": "radio-sajha-chautari-online",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sajha-chautari-online.png",
+      "audio_stream_url": "https://samachardata.radioca.st/;"
+    },
+    {
+      "name": "रेडियो हिमालय",
+      "frequency": "Unknown",
+      "slug": "radio-himalaya",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-himalaya.png",
+      "audio_stream_url": "https://live.itech.host/himalayaradio"
+    },
+  
+    {
+      "name": "कुल एफएम",
+      "frequency": "90.3 MHz",
+      "slug": "kool-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/kool-fm.png",
+      "audio_stream_url": "http://streaming.softnep.net:8059/stream"
+    },
+    {
+      "name": "इटहरी एफएम",
+      "frequency": "92.5 MHz",
+      "slug": "itahari-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/itahari-fm.png",
+      "audio_stream_url": "https://live.itech.host:2880/stream"
+    },
+    
+    {
+      "name": "रेडियो बन्धन",
+      "frequency": "99.2 MHz",
+      "slug": "radio-bandhan",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bandhan.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8082/stream"
+    },
+    {
+      "name": "दमौली एफएम",
+      "frequency": "94.2 MHz",
+      "slug": "damauli-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/damauli-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8529"
+    },
+    {
+      "name": "बि पी विचार नेटवर्क",
+      "frequency": "Unknown",
+      "slug": "bp-bichar-network",
+      "image": "https://npcdn.ratopati.com/media/radios/bp-sanchar-network_wKHMNlTH9q.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8140/radio.mp3"
+    },
+    {
+      "name": "रेडियो दर्पण (अनलाइन )",
+      "frequency": "Unknown",
+      "slug": "radio-darpan-online",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-darpan-online.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8006/stream"
+    },
+   
+    {
+      "name": "रेडियो गेरुवा",
+      "frequency": "Unknown",
+      "slug": "radio-geruwa",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-geruwa_yELmnftd6R.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8315/radio.mp3"
+    },
+    {
+      "name": "सामुदायिक रेडियो बिहानी",
+      "frequency": "89 MHz",
+      "slug": "samudayik-radio-bihani",
+      "image": "https://npcdn.ratopati.com/media/radios/samudayik-radio-bihani_ycezUq9cP3.jpg",
+      "audio_stream_url": "http://streaming.softnep.net:8061/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "च्वाईस एफ एम",
+      "frequency": "90.4 MHz",
+      "slug": "choice-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/choice-fm.png",
+      "audio_stream_url": "https://live.itech.host:8471/stream?type=.mp3"
+    },
+    {
+      "name": "जनकनन्दनी एफएम",
+      "frequency": "95.5 MHz",
+      "slug": "janaknandani-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/janaknandani-fm_2nEJCSfv4r.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8647"
+    },
+    {
+      "name": "हाम्रो रेडियो",
+      "frequency": "103.4 MHz",
+      "slug": "hamro-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/hamro-radio.png",
+      "audio_stream_url": "https://live.itech.host:9556/stream"
+    },
+    
+    {
+      "name": "सप्तरंगी एफएम",
+      "frequency": "101.6 MHz",
+      "slug": "saptarangi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saptarangi-fm.png",
+      "audio_stream_url": "http://live.itech.host:9629/stream"
+    },
+    {
+      "name": "आफ्नो एफएम - ओखलढुंगा",
+      "frequency": "104.8 MHz",
+      "slug": "afno-fm-okhaldunga",
+      "image": "https://npcdn.ratopati.com/media/radio/afno-fm-okhaldunga.png",
+      "audio_stream_url": "https://streaming.softnep.net:10969/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो मालारानी",
+      "frequency": "95.7 MHz",
+      "slug": "radio-malarani",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-malarani_4LEvFGatkj.jpg",
+      "audio_stream_url": "https://live.itech.host:3850/stream"
+    },
+    {
+      "name": "रेडियो सारथी (दार्चुला)",
+      "frequency": "92.6 MHz",
+      "slug": "radio-sarathi-darchula",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sarathi-darchula.png",
+      "audio_stream_url": "https://live.itech.host:1475/live"
+    },
+ 
+    {
+      "name": "रेडियो अडियो",
+      "frequency": "106.3 MHz",
+      "slug": "radio-audio",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-audio_K4rzR8kdNM.jpg",
+      "audio_stream_url": "http://stream.zenolive.com/2w81t82wx3duv"
+    },
+  
+    {
+      "name": "नयाँ नेपाल एफएम",
+      "frequency": "104.5 MHz",
+      "slug": "naya-nepal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/naya-nepal-fm.png",
+      "audio_stream_url": "https://live.itech.host:8585/stream"
+    },
+  
+    {
+      "name": "रेडियाे एभरेष्ट एफएम",
+      "frequency": "96.8 MHz",
+      "slug": "radio-everest-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-everest-fm.png",
+      "audio_stream_url": "http://31.132.6.142:4474/stream?type=http&nocache=20"
+    },
+    {
+      "name": "रेडियो ओखलढुंगा",
+      "frequency": "105.6 MHz",
+      "slug": "radio-okhaldhunga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-okhaldhunga.png",
+      "audio_stream_url": "https://sp14.instainternet.com/8138/stream"
+    },
+    {
+      "name": "थाहा सञ्चार नेटवर्क",
+      "frequency": "99.4 MHz",
+      "slug": "thaha-sanchar-network",
+      "image": "https://npcdn.ratopati.com/media/radio/thaha-sanchar-network.png",
+      "audio_stream_url": "https://streaming.softnep.net:10988/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो ढल्केबर",
+      "frequency": "Unknown",
+      "slug": "radio-dhalkebar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dhalkebar.png",
+      "audio_stream_url": "https://stream-176.zeno.fm/vsd8ng7xsltuv"
+    },
+    {
+      "name": "विजय एफएम",
+      "frequency": "101.6 MHz",
+      "slug": "vijaya-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vijaya-fm.png",
+      "audio_stream_url": "https://live.itech.host:3320/stream"
+    },
+    {
+      "name": "रेडियो मेन्छ्यायम",
+      "frequency": "103.4 MHz",
+      "slug": "radio-menchhyayem",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-menchhyayem.png",
+      "audio_stream_url": "https://live.itech.host:9095/stream"
+    },
+    {
+      "name": "रेडियो तहल्का",
+      "frequency": "91.9 MHz",
+      "slug": "radio-tahalka",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-tahalka_MVKiIdO7Lh.png",
+      "audio_stream_url": "https://live.itech.host:8915/stream"
+    },
+    {
+      "name": "स्काई एफएम (गुल्मी)",
+      "frequency": "90.4 MHz",
+      "slug": "sky-fm-gulmi",
+      "image": "https://npcdn.ratopati.com/media/radio/sky-fm-gulmi.png",
+      "audio_stream_url": "https://live.itech.host:8566/stream"
+    },
+    {
+      "name": "रेडियो जलजला",
+      "frequency": "96.4 MHz",
+      "slug": "radio-jaljala",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jaljala.png",
+      "audio_stream_url": "https://live.itech.host:8149/stream"
+    },
+    {
+      "name": "रेडियो मेट्रो ट्राफिक एफएम",
+      "frequency": "95.5 MHz",
+      "slug": "radio-metro-traffic-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-metro-traffic-fm.png",
+      "audio_stream_url": "https://radio.garden/api/ara/content/listen/ldd2vCHU/channel.mp3?1621999313682"
+    },
+    {
+      "name": "रेडियो रोल्पा",
+      "frequency": "Unknown",
+      "slug": "radio-rolpa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rolpa.png",
+      "audio_stream_url": "http://live.itech.host:9084/stream"
+    },
+    {
+      "name": "रेडियो कोल्हाबी",
+      "frequency": "Unknown",
+      "slug": "radio-kolhabi",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-kolhabi_OTyfkP42UE.jpg",
+      "audio_stream_url": "http://216.55.141.189:5521/stream"
+    },
+    {
+      "name": "रेडियो नयाँ नेपाल एफ.एम",
+      "frequency": "104.4 MHz",
+      "slug": "radio-naya-nepal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-naya-nepal.png",
+      "audio_stream_url": "https://live.itech.host:8585/stream"
+    },
+    {
+      "name": "रेडियो रोशी",
+      "frequency": "101.6 MHz",
+      "slug": "radio-roshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-roshi.png",
+      "audio_stream_url": "https://antares.dribbcast.com/proxy/radioroshi/stream"
+    },
+    {
+      "name": "रेडियो जनता",
+      "frequency": "89.1 MHz",
+      "slug": "radio-janata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-janata.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8058/stream?listening-from-radio-garden=1622000044556"
+    },
+    {
+      "name": "रेडियो सोनामाई",
+      "frequency": "Unknown",
+      "slug": "radio-sonamai",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sonamai.png",
+      "audio_stream_url": "http://live.itechnepal.com:7037/stream?type=.mp3"
+    },
+    {
+      "name": "रेडियो समृद्धि",
+      "frequency": "87.8 MHz",
+      "slug": "radio-samriddhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samriddhi.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो पस्चिमान्चल एफ .एम",
+      "frequency": "Unknown",
+      "slug": "radio-paschimanchal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-paschimanchal.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो बिहानी",
+      "frequency": "97.6 MHz",
+      "slug": "radio-bihani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bihani.png",
+      "audio_stream_url": "https://live.itech.host:9113/stream"
+    },
+    {
+      "name": "युनाइटेड एफएम",
+      "frequency": "92.4 MHz",
+      "slug": "united-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/united-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो गुरबाबा",
+      "frequency": "106.4 MHz",
+      "slug": "radio-gurbaba",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-gurbaba.png",
+      "audio_stream_url": "https://live.itech.host:8663/stream"
+    },
+    {
+      "name": "रेडियो भैरवी",
+      "frequency": "88 MHz",
+      "slug": "radio-bhairavi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bhairavi.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो सामर्थ्य",
+      "frequency": "92.1 MHz",
+      "slug": "radio-samarthya",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samarthya.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो बागेश्वरी एफएम",
+      "frequency": "94.6 MHz",
+      "slug": "radio-bageshwori-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bageshwori-fm.png",
+      "audio_stream_url": "https://stream.zeno.fm/u3spr2gttzyvv"
+    },
+    {
+      "name": "रेडियो कञ्चन",
+      "frequency": "95.8 MHz",
+      "slug": "radio-kanchan",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kanchan.png",
+      "audio_stream_url": "https://streaming.softnep.net:10907/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो सिद्धबाबा",
+      "frequency": "98.4 MHz",
+      "slug": "radio-siddhababa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-siddhababa.png",
+      "audio_stream_url": "https://live.itech.host:8447/stream"
+    },
+    {
+      "name": "झंकार एफएम",
+      "frequency": "97.5 MHz",
+      "slug": "jhankar-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/jhankar-fm.png",
+      "audio_stream_url": "https://live.itech.host:5070/stream"
+    },
+    {
+      "name": "रेडियो जुगल",
+      "frequency": "Unknown",
+      "slug": "radio-jugal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jugal.png",
+      "audio_stream_url": "http://live.itechnepal.com:2160/stream"
+    },
+    {
+      "name": "रेडियो थाहा संचार",
+      "frequency": "Unknown",
+      "slug": "radio-thaha-sanchar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-thaha-sanchar.png",
+      "audio_stream_url": "https://streaming.softnep.net:10972/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "रेडियो इन्द्र सरोवर",
+      "frequency": "105.8 MHz",
+      "slug": "radio-indra-sarowar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-indra-sarowar.png",
+      "audio_stream_url": "https://live.itech.host:3100/stream"
+    },
+    {
+      "name": "प्रदेश एफएम",
+      "frequency": "105 MHz",
+      "slug": "pradesh-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/pradesh-fm.png",
+      "audio_stream_url": "https://live.itech.host:8021/live"
+    },
+    {
+      "name": "रेडियो सम्रिदी",
+      "frequency": "92.6 MHz",
+      "slug": "radio-samridha-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samridee.png",
+      "audio_stream_url": "http://live.itechnepal.com:2240/stream"
+    },
+    {
+      "name": "रेडियो टप टाउन",
+      "frequency": "107 MHz",
+      "slug": "radio-top-town",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-top-town.png",
+      "audio_stream_url": "https://live.itech.host:4635/stream"
+    },
+    {
+      "name": "युनिक एफ.एम",
+      "frequency": "94.3 MHz",
+      "slug": "unique-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/unique-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10839/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "नागरिक एफएम (झापा )",
+      "frequency": "107.5 MHz",
+      "slug": "nagarik-fm-jhapa",
+      "image": "https://npcdn.ratopati.com/media/radio/nagarik-fm-jhapa.png",
+      "audio_stream_url": "https://live.itech.host:4675/stream?type=.mp3"
+    },
+    {
+      "name": "सनातन रेडियो नेटवर्क",
+      "frequency": "Unknown",
+      "slug": "sanatan-radio-network-online",
+      "image": "https://npcdn.ratopati.com/media/radio/sanata-radio-network.png",
+      "audio_stream_url": "https://stream.zeno.fm/18a8b7pk8x8uv"
+    },
+    {
+      "name": "भिजन एफएम",
+      "frequency": "90.5 MHz",
+      "slug": "vision-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vision-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8645"
+    },
+    {
+      "name": "नमस्ते एफएम",
+      "frequency": "Unknown",
+      "slug": "namaste-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/namaste-fm.png",
+      "audio_stream_url": "https://live.itech.host:7019/stream?listening-from-radio-garden=1626062150151"
+    },
+    {
+      "name": "ईगल एफएम",
+      "frequency": "99.4 MHz",
+      "slug": "eagle-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/eagle-fm.png",
+      "audio_stream_url": "https://live.itech.host:2960/stream"
+    },
+    {
+      "name": "रेडियो मलमला",
+      "frequency": "Unknown",
+      "slug": "radio-malmala",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-malmala.png",
+      "audio_stream_url": "https://live.itech.host:3180/stream"
+    },
+    {
+      "name": "स्काई एफएम (बिराटनगर)",
+      "frequency": "Unknown",
+      "slug": "sky-fm-biratnagar",
+      "image": "https://npcdn.ratopati.com/media/radio/sky-fm-biratnagar.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8022/stream"
+    },
+    {
+      "name": "रेडियो छिमेकी",
+      "frequency": "Unknown",
+      "slug": "radio-chhimeki",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-chhimeki.png",
+      "audio_stream_url": "https://live.itech.host:2190/stream"
+    },
+    {
+      "name": "नया आशा एफएम",
+      "frequency": "Unknown",
+      "slug": "naya-aasha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/naya-aasha-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8060/stream"
+    },
+    {
+      "name": "रेडियो भेरीगंगा",
+      "frequency": "Unknown",
+      "slug": "radio-bheriganga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bheriganga.png",
+      "audio_stream_url": "https://live.itech.host:8006/stream"
+    },
+    {
+      "name": "रेडियो रामेछाप",
+      "frequency": "95.8 MHz",
+      "slug": "radio-ramechhap",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-ramechhap.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो एक्टिभ एफएम",
+      "frequency": "97.2 MHz",
+      "slug": "radio-active-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-active-fm.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8042/stream"
+    },
+    {
+      "name": "रेडियो आकाश गंगा",
+      "frequency": "88.5 MHz",
+      "slug": "radio-aakash-ganga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-aakash-ganga.png",
+      "audio_stream_url": "http://103.213.31.60:8287/index.html?sid=1"
+    },
+    {
+      "name": "रेडियो माडी आवाज",
+      "frequency": "98.6 MHz",
+      "slug": "radio-madi-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-madi-aawaj.png",
+      "audio_stream_url": "https://stream-172.zeno.fm/zxio2op4haiuv"
+    },
+    {
+      "name": "रेडियो संखुवासभा",
+      "frequency": "99.5 MHz",
+      "slug": "radio-sankhuwasava",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-sankhuwasava_p6vlMWX2Kw.jpg",
+      "audio_stream_url": "https://live.itech.host:3270/stream"
+    },
+    {
+      "name": "रेडियो मेलम्ची",
+      "frequency": "107.2 MHz",
+      "slug": "radio-melamchi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-melamchi.png",
+      "audio_stream_url": "https://streaming.softnep.net:10948/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो तिफदी",
+      "frequency": "99.1 MHz",
+      "slug": "radio-tiphadee",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tiphadee.png",
+      "audio_stream_url": "https://live.itech.host:9382/stream"
+    },
+    {
+      "name": "पपुलर एफएम",
+      "frequency": "99.5 MHz",
+      "slug": "popular-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/popular-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8024/stream"
+    },
+    {
+      "name": "रेडियो मस्ती",
+      "frequency": "87.9 MHz",
+      "slug": "radio-masti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-masti.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो पल्लवी",
+      "frequency": "Unknown",
+      "slug": "radio-pallawee",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-pallawee.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8020/radio.mp3"
+    },
+    {
+      "name": "रेडियो नेवामी",
+      "frequency": "Unknown",
+      "slug": "radio-newamey",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-newamey.png",
+      "audio_stream_url": "http://radio.garden/api/ara/content/listen/gjlOSCgv/channel.mp3?1621999485831"
+    },
+    {
+      "name": "रेडियो साथी",
+      "frequency": "98.6 MHz",
+      "slug": "radio-sathi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sathi.png",
+      "audio_stream_url": "https://streaming.softnep.net:10863/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो सन्देश",
+      "frequency": "Unknown",
+      "slug": "radio-sandesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sandesh.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "गणतन्त्र एफएम",
+      "frequency": "95.1 MHz",
+      "slug": "ganatantra-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ganatantra-fm.png",
+      "audio_stream_url": "https://live.itech.host:9167/stream"
+    },
+    {
+      "name": "रिलेसन एफएम",
+      "frequency": "88 MHz",
+      "slug": "relation-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/relation-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10928/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो भरोसा",
+      "frequency": "Unknown",
+      "slug": "radio-bharosa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bharosa.png",
+      "audio_stream_url": "http://216.55.141.189:8268/;stream.nsv&type=mp3&volume=90"
+    },
+    {
+      "name": "रेडियो भुवर भवानी",
+      "frequency": "Unknown",
+      "slug": "radio-bhuwar-bhawani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bhuwar-bhawani.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो वर्षा",
+      "frequency": "91.1 MHz",
+      "slug": "radio-barsha",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-barsha.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "भक्तपुर एफएम",
+      "frequency": "Unknown",
+      "slug": "bhaktapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/bhaktapur-fm_ls0s4zIeQ6.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10846/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "विजयपुर एफएम",
+      "frequency": "98.8 MHz",
+      "slug": "vijayapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vijayapur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9484/stream"
+    },
+    {
+      "name": "रेडियो कमल",
+      "frequency": "Unknown",
+      "slug": "radio-kamal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kamal-online.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो सिन्धुलीगढी",
+      "frequency": "92 MHz",
+      "slug": "radio-sindhuligadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sindhuligadhi.png",
+      "audio_stream_url": "https://live.itech.host:1525/stream"
+    },
+    {
+      "name": "स्टार एफएम",
+      "frequency": "95.2 MHz",
+      "slug": "star-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/star-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो कान्तिपुर",
+      "frequency": "96.1 MHz",
+      "slug": "radio-kantipur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kantipur.png",
+      "audio_stream_url": "https://radio-broadcast.ekantipur.com/stream"
+    },
+    {
+      "name": "उज्यालो रेडियो नेटवर्क",
+      "frequency": "90 MHz",
+      "slug": "ujyaalo-radio-network",
+      "image": "https://npcdn.ratopati.com/media/radio/ujyaalo-radio-network.png",
+      "audio_stream_url": "https://stream.zeno.fm/wtuvp08xq1duv"
+    },
+    {
+      "name": "बीबीसी नेपाली रेडियो",
+      "frequency": "103 MHz",
+      "slug": "bbc-nepali-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/bbc-nepali-radio.png",
+      "audio_stream_url": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlow/ak/bbc_nepali_radio.m3u8"
+    },
+    {
+      "name": "रेडियो नेपाल",
+      "frequency": "100 MHz",
+      "slug": "radio-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nepal.png",
+      "audio_stream_url": "https://stream1.radionepal.gov.np/live/"
+    },
+    {
+      "name": "हिट्स एफएम",
+      "frequency": "Unknown",
+      "slug": "hits-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/hits-fm.png",
+      "audio_stream_url": "https://usa15.fastcast4u.com/proxy/hitsfm912?mp=/1"
+    },
+    {
+      "name": "बीबीसी विश्व सेवा",
+      "frequency": "103 MHz",
+      "slug": "bbc-world-service",
+      "image": "https://npcdn.ratopati.com/media/radio/bbc-world-service.png",
+      "audio_stream_url": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlow/ak/bbc_world_service_news_internet.m3u8"
+    },
+    {
+      "name": "सामुदायिक सूचना नेटवर्क - CIN",
+      "frequency": "Unknown",
+      "slug": "community-information-network-cin",
+      "image": "https://npcdn.ratopati.com/media/radio/community-information-network-cin.png",
+      "audio_stream_url": "https://streaming.softnep.net:10996/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "कालिका एफएम",
+      "frequency": "95.2 MHz",
+      "slug": "kalika-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/kalika-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10828/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "कालिका एफएम म्युजिकल",
+      "frequency": "91 MHz",
+      "slug": "kalika-fm-musical",
+      "image": "https://npcdn.ratopati.com/media/radio/kalika-fm-musical.png",
+      "audio_stream_url": "https://streaming.softnep.net:10828/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो अन्नपूर्ण नेपाल",
+      "frequency": "94 MHz",
+      "slug": "radio-annapurna-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-annapurna-nepal.png",
+      "audio_stream_url": "https://shoutcast.prixa.live/annapurna"
+    },
+    {
+      "name": "रेडियो काठमाडौं",
+      "frequency": "92.1 MHz",
+      "slug": "radio-kathmandu",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kathmandu.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8064/stream"
+    },
+    {
+      "name": "तिलोत्तमा एफएम",
+      "frequency": "Unknown",
+      "slug": "tilottama-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/tilottama-fm.png",
+      "audio_stream_url": "https://live.itech.host:4585/stream"
+    },
+    {
+      "name": "रेडियो सिटी",
+      "frequency": "Unknown",
+      "slug": "radio-city",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-city.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8036/stream"
+    },
+    {
+      "name": "नेपालीको रेडियो",
+      "frequency": "88.8 MHz",
+      "slug": "nepaliko-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/nepaliko-radio.png",
+      "audio_stream_url": "http://streaming.webhostnepal.com:9888/"
+    },
+    {
+      "name": "मेट्रो एफ एम",
+      "frequency": "94.6 MHz",
+      "slug": "metro-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/metro-fm.png",
+      "audio_stream_url": "https://astream.nepalipatro.com.np:8263/index.html"
+    },
+    {
+      "name": "रेडियो बुंगल एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-bungal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bungal-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/1112/radio.mp3"
+    },
+    {
+      "name": "स्वदेश एफएम",
+      "frequency": "93.2 MHz",
+      "slug": "swadesh-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/swadesh-fm.png",
+      "audio_stream_url": "https://stream-43.zeno.fm/xm2babvnephvv"
+    },
+    {
+      "name": "अन्नपूर्ण एफएम",
+      "frequency": "93.4 MHz",
+      "slug": "annapurna-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/annapurna-fm.png",
+      "audio_stream_url": "https://live.itech.host:8969/stream"
+    },
+    {
+      "name": "धडकन एफ एम",
+      "frequency": "Unknown",
+      "slug": "dhadkan-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhadkan-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8112"
+    },
+    {
+      "name": "जयपृथ्वी एफएम",
+      "frequency": "96.3 MHz",
+      "slug": "jayprithivi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/jayprithivi-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10824/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो तमोर",
+      "frequency": "Unknown",
+      "slug": "radio-tamor",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tamor.png",
+      "audio_stream_url": "https://live.itech.host:8945/stream"
+    },
+    {
+      "name": "रेडियो कालिञ्चोक",
+      "frequency": "Unknown",
+      "slug": "radio-kalinchowk",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kalinchowk.png",
+      "audio_stream_url": "https://streaming.softnep.net:10967/;stream"
+    },
+    {
+      "name": "ए वन एफएम",
+      "frequency": "99 MHz",
+      "slug": "a-one-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/a-one-fm.png",
+      "audio_stream_url": "http://stream.zeno.fm/0ghbmuim5brvv"
+    },
+    {
+      "name": "रेडियो वीरगन्ज",
+      "frequency": "99 MHz",
+      "slug": "radio-birgunj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-birgunj.png",
+      "audio_stream_url": "https://streaming.softnep.net:10991/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "हजुरको रेडियो",
+      "frequency": "102.1 MHz",
+      "slug": "hajurko-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/hajurko-radio.png",
+      "audio_stream_url": "https://live.itech.host:9520/stream"
+    },
+    {
+      "name": "रेडियो अध्यात्मज्योति",
+      "frequency": "104.8 MHz",
+      "slug": "radio-adhyatma-jyoti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-adhyatma-jyoti.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8074"
+    },
+    {
+      "name": "रेडियो मनोरन्जन",
+      "frequency": "Unknown",
+      "slug": "radio-entertainment",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-entertainment.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8016/stream"
+    },
+    {
+      "name": "रेडियो रेसुंगा",
+      "frequency": "106.2 MHz",
+      "slug": "radio-resunga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-resunga.png",
+      "audio_stream_url": "https://live.itech.host:3260/stream"
+    },
+    {
+      "name": "रेडियो हाम्रो पहुँच",
+      "frequency": "89 MHz",
+      "slug": "radio-hamro-pahunch",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-hamro-pahunch.png",
+      "audio_stream_url": "https://live.itech.host:8693/stream"
+    },
+    {
+      "name": "रेडियो मलंगवा",
+      "frequency": "95.6 MHz",
+      "slug": "radio-malangawa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-malangawa.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8711"
+    },
+    {
+      "name": "रेडियो शारदा",
+      "frequency": "99.2 MHz",
+      "slug": "radio-sharada",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-sharada_mr6oMJugme.jpg",
+      "audio_stream_url": "https://live.itech.host:9448/stream"
+    },
+    {
+      "name": "बुटवल एफएम",
+      "frequency": "94.4 MHz",
+      "slug": "butwal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/butwal-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10994/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो अर्थ सरोकार",
+      "frequency": "Unknown",
+      "slug": "radio-artha-sarokar",
+      "image": "https://npcdn.ratopati.com/media/radios/artha-sarokar_JX7fWSftk0.jpg",
+      "audio_stream_url": "https://live.itech.host:2440/stream"
+    },
+    {
+      "name": "सप्तकोशी एफएम",
+      "frequency": "90 MHz",
+      "slug": "saptakoshi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saptakoshi-fm.png",
+      "audio_stream_url": "https://live.itech.host:4535/stream"
+    },
+    {
+      "name": "स्टार एफएम",
+      "frequency": "92 MHz",
+      "slug": "star-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/star-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो दिदीबहिनी",
+      "frequency": "95.2 MHz",
+      "slug": "radio-didibahini",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-didibahini.png",
+      "audio_stream_url": "https://live.itech.host:8326/stream"
+    },
+    {
+      "name": "मिथिलाञ्चल एफएम",
+      "frequency": "105 MHz",
+      "slug": "mithilanchal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/mithilanchal-fm.png",
+      "audio_stream_url": "https://live.itech.host:8645/stream"
+    },
+    {
+      "name": "हिमाल एफएम",
+      "frequency": "Unknown",
+      "slug": "himal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/himal-fm.png",
+      "audio_stream_url": "https://sonic-ca.instainternet.com/8012/stream"
+    },
+    {
+      "name": "रेडियो धनगढी",
+      "frequency": "90.5 MHz",
+      "slug": "radio-dhangadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dhangadhi.png",
+      "audio_stream_url": "https://astream.nepalipatro.com.np:8233/index.html"
+    },
+    {
+      "name": "रेडियो नेपालबानी",
+      "frequency": "94.9 MHz",
+      "slug": "radio-nepalbani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nepalbani.png",
+      "audio_stream_url": "https://live.itech.host:8681/stream"
+    },
+    {
+      "name": "रेडियो बन्दीपुर",
+      "frequency": "88.8 MHz",
+      "slug": "radio-bandipur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bandipur.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "निलकन्ठ एफएम",
+      "frequency": "98.5 MHz",
+      "slug": "neelkantha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/neelkantha-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10872/stream"
+    },
+    {
+      "name": "धुर्वतरा एफएम",
+      "frequency": "89.8 MHz",
+      "slug": "dhurbatara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhurbatara-fm.png",
+      "audio_stream_url": "https://live.itech.host:8839/stream"
+    },
+    {
+      "name": "सोलु एफएम",
+      "frequency": "101.2 MHz",
+      "slug": "solu-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/solu-fm.png",
+      "audio_stream_url": "https://live.itech.host:9550/stream"
+    },
+    {
+      "name": "रेडियो होलेरी",
+      "frequency": "102.5 MHz",
+      "slug": "radio-holeri",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-holeri.png",
+      "audio_stream_url": "https://stream-153.zeno.fm/wm6khfwvdf9uv"
+    },
+    {
+      "name": "रेडियो सानोभेरी एफ एम",
+      "frequency": "100.8 MHz",
+      "slug": "radio-sanobheri-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sanobheri-fm.png",
+      "audio_stream_url": "https://live.itech.host:9430/stream"
+    },
+    {
+      "name": "बि एफएम",
+      "frequency": "91.2 MHz",
+      "slug": "bfm",
+      "image": "https://npcdn.ratopati.com/media/radio/bfm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8064/stream"
+    },
+    {
+      "name": "रेडियो सारथी",
+      "frequency": "Unknown",
+      "slug": "radio-sarathi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sarathi.png",
+      "audio_stream_url": "https://live.itech.host:9472/stream"
+    },
+    {
+      "name": "रेडियो सन्धिखर्क",
+      "frequency": "Unknown",
+      "slug": "radio-sandhikharka",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sandhikharka.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो दार्चुला एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-darchula-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-darchula-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10951/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो बैतडी",
+      "frequency": "Unknown",
+      "slug": "radio-baitadi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-baitadi.png",
+      "audio_stream_url": "http://95.217.153.73:8044/index.html?sid=1"
+    },
+    {
+      "name": "रेडियो साइपाल एफएम",
+      "frequency": "100.6 MHz",
+      "slug": "saipal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saipal-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10915/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "खाँदबारी एफएम",
+      "frequency": "Unknown",
+      "slug": "khandbari-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/khandbari-fm.png",
+      "audio_stream_url": "http://live.itechnepal.com:8286/stream"
+    },
+    {
+      "name": "शुक्लागण्डकी एफएम",
+      "frequency": "97.6 MHz",
+      "slug": "shuklagandaki-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/shuklagandaki-fm.png",
+      "audio_stream_url": "https://live.itech.host:7137/stream"
+    },
+    {
+      "name": "रेडियो कर्णाली आवाज",
+      "frequency": "Unknown",
+      "slug": "radio-karnali-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-karnali-aawaj.png",
+      "audio_stream_url": "https://streaming.softnep.net:10979/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो बुद्ध आवाज",
+      "frequency": "89.6 MHz",
+      "slug": "radio-buddha-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-buddha-aawaj.png",
+      "audio_stream_url": "https://live.itech.host:9358/stream"
+    },
+    {
+      "name": "रेडियो सुदुर आवाज",
+      "frequency": "95 MHz",
+      "slug": "radio-sudur-awaz",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sudur-awaz.png",
+      "audio_stream_url": "https://live.itech.host:8639/stream"
+    },
+    {
+      "name": "रेडियो अलिभ नेपाल",
+      "frequency": "Unknown",
+      "slug": "radio-olive-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-olive-nepal.png",
+      "audio_stream_url": "https://18313.live.streamtheworld.com/RADIO_OLIVE_HITS_S02AAC.aac"
+    },
+    {
+      "name": "रेडियो टाइगर",
+      "frequency": "99.2 MHz",
+      "slug": "radio-tiger",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tiger.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8637/radio.mp3"
+    },
+    {
+      "name": "एभरेष्ट एफएम",
+      "frequency": "93 MHz",
+      "slug": "everest-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/everest-fm.png",
+      "audio_stream_url": "https://live.itech.host:5005/stream"
+    },
+    {
+      "name": "बुलबुले एफएम",
+      "frequency": "Unknown",
+      "slug": "bulbule-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bulbule-fm.png",
+      "audio_stream_url": "https://live.itech.host:8385/stream"
+    },
+    {
+      "name": "रेडियो भेरी",
+      "frequency": "98.6 MHz",
+      "slug": "radio-bheri",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bheri.png",
+      "audio_stream_url": "https://live.itech.host:9065/stream"
+    },
+    {
+      "name": "बिन्दास एफएम",
+      "frequency": "94.8 MHz",
+      "slug": "bindash-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bindash-fm.png",
+      "audio_stream_url": "https://liveradio.lexiconcpl.com:8443/radiobindaas.mp3"
+    },
+    {
+      "name": "टीकापुर एफएम",
+      "frequency": "Unknown",
+      "slug": "tikapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/tikapur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9519/live"
+    },
+    {
+      "name": "रुरु एफएम",
+      "frequency": "94.8 MHz",
+      "slug": "ruru-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ruru-fm.png",
+      "audio_stream_url": "http://stream.zeno.fm/be8hr3kr44zuv/;"
+    },
+    {
+      "name": "रेडियो अमरगढी",
+      "frequency": "97.4 MHz",
+      "slug": "radio-amargadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-amargadhi.png",
+      "audio_stream_url": "https://live.itech.host:8927/stream"
+    },
+    {
+      "name": "सी एफएम",
+      "frequency": "94.7 MHz",
+      "slug": "c-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/c-fm.png",
+      "audio_stream_url": "https://live.itech.host:8391/live"
+    },
+    {
+      "name": "रेडियो भोजपुर",
+      "frequency": "9308 MHz",
+      "slug": "radio-bhojpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bhojpur.png",
+      "audio_stream_url": "http://live.itechnepal.com:9078/stream?type=.mp3"
+    },
+    {
+      "name": "रेडियो जय मधेश",
+      "frequency": "93.5 MHz",
+      "slug": "radio-jay-madhesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jay-madhesh.png",
+      "audio_stream_url": "https://live.itech.host:3140/stream"
+    },
+    {
+      "name": "रेडियो सूर्यमुखी",
+      "frequency": "Unknown",
+      "slug": "radio-suryamukhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-suryamukhi.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8030/radio.mp3"
+    },
+    {
+      "name": "ढुकढुकी एफएम",
+      "frequency": "Unknown",
+      "slug": "dhukdhuki-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/dhukdhuki-fm.png",
+      "audio_stream_url": "https://streaming.shoutcast.com/dhukdhukifm"
+    },
+    {
+      "name": "रेडियो संकेत",
+      "frequency": "Unknown",
+      "slug": "radio-sanket",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sanket.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8523"
+    },
+    {
+      "name": "रेडियो तनहुँ",
+      "frequency": "97.2 MHz",
+      "slug": "radio-tanahun",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tanahun.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "पाथीभरा एफएम",
+      "frequency": "Unknown",
+      "slug": "pathibhara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/pathibhara-fm.png",
+      "audio_stream_url": "https://live.itech.host:8749/stream"
+    },
+    {
+      "name": "रेडियो पश्चिम टुडे",
+      "frequency": "Unknown",
+      "slug": "radio-paschim-today",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-paschim-today.png",
+      "audio_stream_url": "https://live.itech.host:3240/stream"
+    },
+    {
+      "name": "रेडियो सुसेली",
+      "frequency": "Unknown",
+      "slug": "radio-suseli",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-suseli.png",
+      "audio_stream_url": "https://live.itech.host:8851/stream?1708590853307"
+    },
+    {
+      "name": "रेडियो कपुरकोट",
+      "frequency": "Unknown",
+      "slug": "radio-kapurkot",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kapurkot.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो एकता",
+      "frequency": "92.4 MHz",
+      "slug": "radio-ekata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-ekata.png",
+      "audio_stream_url": "https://live.itech.host:1810/stream"
+    },
+    {
+      "name": "रेडियो समाबेसि",
+      "frequency": "105 MHz",
+      "slug": "radio-samabeshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samabeshi.png",
+      "audio_stream_url": "https://live.itech.host:9382/stream"
+    },
+    {
+      "name": "रेडियो कावासोती",
+      "frequency": "102.6 MHz",
+      "slug": "radio-kawasoti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kawasoti.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "गल्कोट एफएम",
+      "frequency": "Unknown",
+      "slug": "galkot-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/galkot-fm.png",
+      "audio_stream_url": "https://live.itech.host:1270/stream"
+    },
+    {
+      "name": "मनकामना एफएम",
+      "frequency": "98.7 MHz",
+      "slug": "manakamana-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/manakamana-fm.png",
+      "audio_stream_url": "https://live.itech.host:1855/stream"
+    },
+    {
+      "name": "रेडियो पाल्पा",
+      "frequency": "97.1 MHz",
+      "slug": "radio-palpa",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-palpa_ysHXnzPTuI.jpg",
+      "audio_stream_url": "http://216.55.141.189:8467/;stream/1"
+    },
+    {
+      "name": "रेडियो प्रकृति",
+      "frequency": "Unknown",
+      "slug": "radio-prakriti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-prakriti.png",
+      "audio_stream_url": "https://live.itech.host:8939/stream"
+    },
+    {
+      "name": "रेडियो पुष्पाञ्जली",
+      "frequency": "97.4 MHz",
+      "slug": "radio-puspanjali",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-puspanjali.png",
+      "audio_stream_url": "https://live.itech.host:2945/stream"
+    },
+    {
+      "name": "शुक्लाफाँटा एफएम",
+      "frequency": "99.4 MHz",
+      "slug": "suklafanta-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/suklafanta-fm.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8010/stream"
+    },
+    {
+      "name": "रेडियो मध्यश्चिम",
+      "frequency": "91.4 MHz",
+      "slug": "radio-madhya-paschim",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-madhya-paschim.png",
+      "audio_stream_url": "https://live.itech.host:9011/stream?1672308617629"
+    },
+    {
+      "name": "रेडियो टुडे",
+      "frequency": "97 MHz",
+      "slug": "radio-today",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-today.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो राजमार्ग",
+      "frequency": "Unknown",
+      "slug": "radio-rajmarg",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rajmarg.png",
+      "audio_stream_url": "https://streaming.softnep.net:10851/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो ढोरपाटन",
+      "frequency": "104.1 MHz",
+      "slug": "radio-dhorpatan",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dhorpatan.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो पाताल गङ्गा",
+      "frequency": "106.1 MHz",
+      "slug": "radio-patal-ganga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-patal-ganga.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "क्यापिटल एफ.एम.",
+      "frequency": "92.4 MHz",
+      "slug": "capital-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/capital-fm-92.4_1EhIRCQkd2.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10982/;stream.nsv&type=mp3&volume=10"
+    },
+    {
+      "name": "रेडियो हापुरे",
+      "frequency": "Unknown",
+      "slug": "radio-hapure",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-hapure.png",
+      "audio_stream_url": "https://stream-153.zeno.fm/n8ey05ydbxhvv"
+    },
+    {
+      "name": "रेडियो नमस्ते- कैलाली",
+      "frequency": "96.5 MHz",
+      "slug": "radio-namaste-kailali",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-namaste-kailali.png",
+      "audio_stream_url": "https://live.itech.host:8343/stream"
+    },
+    {
+      "name": "रेडियो साहिनो",
+      "frequency": "Unknown",
+      "slug": "radio-sahino",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sahino.png",
+      "audio_stream_url": "https://live.itech.host:7098/stream"
+    },
+    {
+      "name": "बिस्वास एफएम",
+      "frequency": "93.6 MHz",
+      "slug": "biswas-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/biswas-fm.png",
+      "audio_stream_url": "https://stream-150.zeno.fm/t7d0knup6x8uv"
+    },
+    {
+      "name": "रेडियो पौरखी",
+      "frequency": "90.4 MHz",
+      "slug": "radio-paurakhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-paurakhi.png",
+      "audio_stream_url": "https://live.itech.host:8903/stream"
+    },
+    {
+      "name": "रेडियो आठराई",
+      "frequency": "101.2 MHz",
+      "slug": "radio-athrai",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-athrai.png",
+      "audio_stream_url": "https://live.itech.host:4845/stream"
+    },
+    {
+      "name": "रेडियो सिमरा",
+      "frequency": "91.2 MHz",
+      "slug": "radio-simara",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-simara.png",
+      "audio_stream_url": "https://streaming.softnep.net:10925/"
+    },
+    {
+      "name": "हलेसी एफएम",
+      "frequency": "102.4 MHz",
+      "slug": "halesi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/halesi-fm.png",
+      "audio_stream_url": "http://185.181.63.148:8010/halesifm"
+    },
+    {
+      "name": "रेडियो राष्ट्रिय एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-rastriya-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rastriya-fm.png",
+      "audio_stream_url": "http://192.227.85.169:4753/;"
+    },
+    {
+      "name": "रेडियो लाङटाङ",
+      "frequency": "90.3 MHz",
+      "slug": "radio-langtang",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-langtang.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8032"
+    },
+    {
+      "name": "इच्छाकामना एफ.एम",
+      "frequency": "102.4 MHz",
+      "slug": "ichchhakamana-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/-ichchhakamana-fm_HI4VDk4nIq.png",
+      "audio_stream_url": "https://streaming.softnep.net:10982/;stream.nsv&type=mp3&volume=10"
+    },
+    {
+      "name": "रेडियो मिशन",
+      "frequency": "105.3 MHz",
+      "slug": "radio-mission",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-mission.png",
+      "audio_stream_url": "https://centova1.toofancom.com/proxy/radiomission?mp=/stream"
+    },
+    {
+      "name": "रेडियो काबेली",
+      "frequency": "Unknown",
+      "slug": "radio-kabeli",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kabeli.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8028/stream"
+    },
+    {
+      "name": "रेडियो जननी",
+      "frequency": "90.6 MHz",
+      "slug": "radio-janani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-janani.png",
+      "audio_stream_url": "https://live.itech.host:8773/stream"
+    },
+    {
+      "name": "रेडियो डोटी",
+      "frequency": "98.5 MHz",
+      "slug": "radio-doti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-doti.png",
+      "audio_stream_url": "https://live.itech.host:4735/stream"
+    },
+    {
+      "name": "नवलपुर एफएम",
+      "frequency": "104.7 MHz",
+      "slug": "nawalpur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/nawalpur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9376/stream"
+    },
+    {
+      "name": "रेडियो अमुर्त",
+      "frequency": "91.6 MHz",
+      "slug": "radio-amurta",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-amurta.png",
+      "audio_stream_url": "http://95.217.153.73:8004/stream"
+    },
+    {
+      "name": "रेडियो श्रृङ्गेश्वर एफ.एम",
+      "frequency": "Unknown",
+      "slug": "radio-shringeshwar-fm-sfm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-shringeshwar-fm-sfm.png",
+      "audio_stream_url": "https://stream-150.zeno.fm/1qgfbe6sz1zuv?zs=Tfq1BITbTICFRYiuhQwXpg"
+    },
+    {
+      "name": "रेडियो कृष्णसार",
+      "frequency": "94 MHz",
+      "slug": "radio-krishnasar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-krishnasar.png",
+      "audio_stream_url": "https://live.itech.host:8434/stream"
+    },
+    {
+      "name": "रेडियो मेलौलि",
+      "frequency": "Unknown",
+      "slug": "radio-melauli",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-melauli.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो संजीवनी",
+      "frequency": "91 MHz",
+      "slug": "radio-sanjibani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sanjibani.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "शुभेक्षा एफ.एम.",
+      "frequency": "Unknown",
+      "slug": "shubheksha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/shubheksha-fm.png",
+      "audio_stream_url": "https://eu9.fastcast4u.com/proxy/sujanpremi?mp=/1"
+    },
+    {
+      "name": "रेडियो सम्बृद्ध नेपाल",
+      "frequency": "92.6 MHz",
+      "slug": "radio-sambridha-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sambridha-nepal.png",
+      "audio_stream_url": "https://live.itech.host:4865/stream"
+    },
+    {
+      "name": "रेडियो सुनकोशी",
+      "frequency": "105.6 MHz",
+      "slug": "radio-sunkoshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sunkoshi.png",
+      "audio_stream_url": "https://live.itech.host:8743/stream"
+    },
+    {
+      "name": "रेडियो खोटाङ",
+      "frequency": "103.3 MHz",
+      "slug": "radio-khotang",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-khotang.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो कञ्चनपुर",
+      "frequency": "Unknown",
+      "slug": "radio-kanchanpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kanchanpur.png",
+      "audio_stream_url": "https://live.itech.host:8299/stream"
+    },
+    {
+      "name": "संबाद एफएम",
+      "frequency": "98.3 MHz",
+      "slug": "radio-sambad",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sambad.png",
+      "audio_stream_url": "https://stream.hamropatro.com/5509/radio.mp3"
+    },
+    {
+      "name": "रेडियो कालिगण्डकी",
+      "frequency": "Unknown",
+      "slug": "radio-kaligandaki",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kaligandaki.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो रोधी",
+      "frequency": "Unknown",
+      "slug": "radio-rodhi-online",
+      "image": "https://npcdn.ratopati.com/media/radios/rodhi-radio_vjcWuaO88F.jpg",
+      "audio_stream_url": "https://stream.hamropatro.com/8661"
+    },
+    {
+      "name": "रेडियो मकवानपुरगढी",
+      "frequency": "95 MHz",
+      "slug": "radio-makawanpurgadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-makawanpurgadhi.png",
+      "audio_stream_url": "http://streaming.hamropatro.com:8767/"
+    },
+    {
+      "name": "रेडियो साझा आवाज",
+      "frequency": "90.9 MHz",
+      "slug": "radio-sajha-aawaz",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sajha-aawaz.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "इलाम एफएम",
+      "frequency": "93 MHz",
+      "slug": "ilam-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ilam-fm.png",
+      "audio_stream_url": "http://live.itechnepal.com:9635/stream"
+    },
+    {
+      "name": "रेडियो रास्ट्रिय सन्देश",
+      "frequency": "Unknown",
+      "slug": "radio-ratriya-sanesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-ratriya-sanesh.png",
+      "audio_stream_url": "http://stream.zeno.fm/qe715t14gwzuv"
+    },
+    {
+      "name": "रेडियो सौराह",
+      "frequency": "Unknown",
+      "slug": "radio-sauraha",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sauraha.png",
+      "audio_stream_url": "https://streaming.softnep.net:10827/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो शभ्यता",
+      "frequency": "99.5 MHz",
+      "slug": "radio-shabhyata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-shabhyata.png",
+      "audio_stream_url": "http://sp14.instainternet.com:8028/stream"
+    },
+    {
+      "name": "राैतहट एफ एम",
+      "frequency": "Unknown",
+      "slug": "rautahat-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/rautahat-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो निगरानी",
+      "frequency": "107 MHz",
+      "slug": "radio-nigarani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nigarani.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो नागरिक (मोरङ)",
+      "frequency": "100.4 MHz",
+      "slug": "radio-nagarik-morang",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-nagarik-morang.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8100/stream"
+    },
+    {
+      "name": "मौराखारा एफएम",
+      "frequency": "106.5 MHz",
+      "slug": "mourakhara-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/mourakhara-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10882/;stream.nsv&amp;type=mp3"
+    },
+    {
+      "name": "रेडियो स्वाभिमान",
+      "frequency": "Unknown",
+      "slug": "radio-swabhiman",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-swabhiman.png",
+      "audio_stream_url": "https://ec1.everestcast.host:1225/stream?type=.mp3"
+    },
+    {
+      "name": "मुड्केचुला एफएम",
+      "frequency": "93.5 MHz",
+      "slug": "mudkechula-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/mudkechula-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो मन्त्र",
+      "frequency": "105.4 MHz",
+      "slug": "radio-mantra",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-mantra.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो उदयपुर",
+      "frequency": "102.4 MHz",
+      "slug": "radio-udaypur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-udaypur.png",
+      "audio_stream_url": "http://streaming.hamropatro.com:8021/;stream.mp3"
+    },
+    {
+      "name": "सिनर्जी एफएम",
+      "frequency": "Unknown",
+      "slug": "synergy-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/synergy-fm.png",
+      "audio_stream_url": "https://live.itech.host:3880/stream"
+    },
+    {
+      "name": "बज्जिका एफ एम",
+      "frequency": "99.4 MHz",
+      "slug": "bajjika-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/bajjika-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8052/stream"
+    },
+    {
+      "name": "रेडियो डोल्पा एफएम",
+      "frequency": "Unknown",
+      "slug": "radio-dolpa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dolpa.png",
+      "audio_stream_url": "https://live.itech.host:8337/stream"
+    },
+    {
+      "name": "रेडियो बंगलाचुली",
+      "frequency": "91.7 MHz",
+      "slug": "radio-bangalachuli",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-bangalachuli_K5553jOKUN.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10826/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "रेडियो कोहलपुर",
+      "frequency": "101.5 MHz",
+      "slug": "radio-kohalpur",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kohalpur.png",
+      "audio_stream_url": "https://streaming.softnep.net:10943/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो मकालु",
+      "frequency": "Unknown",
+      "slug": "radio-makalu",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-makalu.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "तामाकोशी एफ एम",
+      "frequency": "Unknown",
+      "slug": "tamakoshi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/tamakoshi-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो समग्र मधेश",
+      "frequency": "90.4 MHz",
+      "slug": "radio-samagra-madhesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samagra-madhesh.png",
+      "audio_stream_url": "http://streaming.softnep.net:10922/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "असल साथी रेडियो",
+      "frequency": "98.9 MHz",
+      "slug": "asal-sathi-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/asal-sathi-radio.png",
+      "audio_stream_url": "https://stream-155.zeno.fm/0whuy4nsfa1uv"
+    },
+    {
+      "name": "रेडियो बिराट",
+      "frequency": "88.5 MHz",
+      "slug": "radio-birat",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-birat.png",
+      "audio_stream_url": "https://live.itech.host:9173/stream?1677054017365"
+    },
+    {
+      "name": "रेडियो हेम्जा",
+      "frequency": "88.5 MHz",
+      "slug": "radio-hemja",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-hemja.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "एफएम प्लस",
+      "frequency": "Unknown",
+      "slug": "fm-plus",
+      "image": "https://npcdn.ratopati.com/media/radio/fm-plus.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो जनसञ्चार",
+      "frequency": "17.9 MHz",
+      "slug": "radio-jansanchar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jansanchar.png",
+      "audio_stream_url": "https://online.net.np/8116/stream"
+    },
+    {
+      "name": "रेडियो सलेश",
+      "frequency": "88.8 MHz",
+      "slug": "radio-salhesh",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-salhesh.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो सद्भाव",
+      "frequency": "Unknown",
+      "slug": "radio-sadvab",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sadvab.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो स्वर्ग भुमि",
+      "frequency": "106.7 MHz",
+      "slug": "radio-sworgbhumee",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sworgbhumee.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो सैलुङ",
+      "frequency": "92.7 MHz",
+      "slug": "radio-sailung",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sailung.png",
+      "audio_stream_url": "https://live.itech.host:9179/stream"
+    },
+    {
+      "name": "रेडियो उपत्यका",
+      "frequency": "87.6 MHz",
+      "slug": "radio-upatyaka",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-upatyaka.png",
+      "audio_stream_url": "https://onlinebroadcast.com.np/8g5vbvllzz8tv"
+    },
+    {
+      "name": "रेडियो संकृति",
+      "frequency": "98.2 MHz",
+      "slug": "radio-sankriti",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sankriti.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो साझा चौतारी-  अनलाईन",
+      "frequency": "Unknown",
+      "slug": "radio-sajha-chautari-online",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sajha-chautari-online.png",
+      "audio_stream_url": "https://samachardata.radioca.st/;"
+    },
+    {
+      "name": "रेडियो हिमालय",
+      "frequency": "Unknown",
+      "slug": "radio-himalaya",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-himalaya.png",
+      "audio_stream_url": "https://live.itech.host/himalayaradio"
+    },
+    {
+      "name": "राजापुर एफएम",
+      "frequency": "Unknown",
+      "slug": "rajapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/rajapur-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "शक्ति एफएम",
+      "frequency": "103.4 MHz",
+      "slug": "shakti-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/shakti-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "कुल एफएम",
+      "frequency": "90.3 MHz",
+      "slug": "kool-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/kool-fm.png",
+      "audio_stream_url": "http://streaming.softnep.net:8059/stream"
+    },
+    {
+      "name": "इटहरी एफएम",
+      "frequency": "92.5 MHz",
+      "slug": "itahari-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/itahari-fm.png",
+      "audio_stream_url": "https://live.itech.host:2880/stream"
+    },
+    {
+      "name": "सामुदायिक रेडियो धुर्कोट",
+      "frequency": "Unknown",
+      "slug": "community-radio-dhurkot",
+      "image": "https://npcdn.ratopati.com/media/radio/community-radio-dhurkot.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो सभ्यता",
+      "frequency": "Unknown",
+      "slug": "radio-sabhyata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sabhyata.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो बन्धन",
+      "frequency": "99.2 MHz",
+      "slug": "radio-bandhan",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bandhan.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8082/stream"
+    },
+    {
+      "name": "दमौली एफएम",
+      "frequency": "94.2 MHz",
+      "slug": "damauli-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/damauli-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8529"
+    },
+    {
+      "name": "बि पी विचार नेटवर्क",
+      "frequency": "Unknown",
+      "slug": "bp-bichar-network",
+      "image": "https://npcdn.ratopati.com/media/radios/bp-sanchar-network_wKHMNlTH9q.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8140/radio.mp3"
+    },
+    {
+      "name": "रेडियो दर्पण (अनलाइन )",
+      "frequency": "Unknown",
+      "slug": "radio-darpan-online",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-darpan-online.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8006/stream"
+    },
+    {
+      "name": "रेडियो लिपुलेक",
+      "frequency": "99.6 MHz",
+      "slug": "radio-lipulek",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-lipulek_rWqxoXFbUp.jpg",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो गेरुवा",
+      "frequency": "Unknown",
+      "slug": "radio-geruwa",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-geruwa_yELmnftd6R.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8315/radio.mp3"
+    },
+    {
+      "name": "सामुदायिक रेडियो बिहानी",
+      "frequency": "89 MHz",
+      "slug": "samudayik-radio-bihani",
+      "image": "https://npcdn.ratopati.com/media/radios/samudayik-radio-bihani_ycezUq9cP3.jpg",
+      "audio_stream_url": "http://streaming.softnep.net:8061/;stream.nsv&type=mp3&volume=50"
+    },
+    {
+      "name": "च्वाईस एफ एम",
+      "frequency": "90.4 MHz",
+      "slug": "choice-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/choice-fm.png",
+      "audio_stream_url": "https://live.itech.host:8471/stream?type=.mp3"
+    },
+    {
+      "name": "जनकनन्दनी एफएम",
+      "frequency": "95.5 MHz",
+      "slug": "janaknandani-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/janaknandani-fm_2nEJCSfv4r.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8647"
+    },
+    {
+      "name": "हाम्रो रेडियो",
+      "frequency": "103.4 MHz",
+      "slug": "hamro-radio",
+      "image": "https://npcdn.ratopati.com/media/radio/hamro-radio.png",
+      "audio_stream_url": "https://live.itech.host:9556/stream"
+    },
+    {
+      "name": "श्रीनगर एफ एम",
+      "frequency": "93.2 MHz",
+      "slug": "shreenagar-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/shreenagar-fm_EUAjkndXE4.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "आगन एफ एम",
+      "frequency": "89.6 MHz",
+      "slug": "aagan-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/aagan-fm.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "सप्तरंगी एफएम",
+      "frequency": "101.6 MHz",
+      "slug": "saptarangi-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/saptarangi-fm.png",
+      "audio_stream_url": "http://live.itech.host:9629/stream"
+    },
+    {
+      "name": "आफ्नो एफएम - ओखलढुंगा",
+      "frequency": "104.8 MHz",
+      "slug": "afno-fm-okhaldunga",
+      "image": "https://npcdn.ratopati.com/media/radio/afno-fm-okhaldunga.png",
+      "audio_stream_url": "https://streaming.softnep.net:10969/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो मालारानी",
+      "frequency": "95.7 MHz",
+      "slug": "radio-malarani",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-malarani_4LEvFGatkj.jpg",
+      "audio_stream_url": "https://live.itech.host:3850/stream"
+    },
+    {
+      "name": "रेडियो सारथी (दार्चुला)",
+      "frequency": "92.6 MHz",
+      "slug": "radio-sarathi-darchula",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sarathi-darchula.png",
+      "audio_stream_url": "https://live.itech.host:1475/live"
+    },
+    {
+      "name": "रेडियो भिजन",
+      "frequency": "91.6 MHz",
+      "slug": "radio-vision",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-vision.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो स्वागतम",
+      "frequency": "89 MHz",
+      "slug": "radio-swagatam",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-swagatam.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियो अडियो",
+      "frequency": "106.3 MHz",
+      "slug": "radio-audio",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-audio_K4rzR8kdNM.jpg",
+      "audio_stream_url": "http://stream.zenolive.com/2w81t82wx3duv"
+    },
+ 
+    {
+      "name": "नयाँ नेपाल एफएम",
+      "frequency": "104.5 MHz",
+      "slug": "naya-nepal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/naya-nepal-fm.png",
+      "audio_stream_url": "https://live.itech.host:8585/stream"
+    },
+    {
+      "name": "रेडियो पालुङ",
+      "frequency": "Unknown",
+      "slug": "radio-palung",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-palung.png",
+      "audio_stream_url": null
+    },
+    {
+      "name": "रेडियाे एभरेष्ट एफएम",
+      "frequency": "96.8 MHz",
+      "slug": "radio-everest-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-everest-fm.png",
+      "audio_stream_url": "http://31.132.6.142:4474/stream?type=http&nocache=20"
+    },
+    {
+      "name": "रेडियो ओखलढुंगा",
+      "frequency": "105.6 MHz",
+      "slug": "radio-okhaldhunga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-okhaldhunga.png",
+      "audio_stream_url": "https://sp14.instainternet.com/8138/stream"
+    },
+    {
+      "name": "थाहा सञ्चार नेटवर्क",
+      "frequency": "99.4 MHz",
+      "slug": "thaha-sanchar-network",
+      "image": "https://npcdn.ratopati.com/media/radio/thaha-sanchar-network.png",
+      "audio_stream_url": "https://streaming.softnep.net:10988/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो ढल्केबर",
+      "frequency": "Unknown",
+      "slug": "radio-dhalkebar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-dhalkebar.png",
+      "audio_stream_url": "https://stream-176.zeno.fm/vsd8ng7xsltuv"
+    },
+    {
+      "name": "विजय एफएम",
+      "frequency": "101.6 MHz",
+      "slug": "vijaya-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vijaya-fm.png",
+      "audio_stream_url": "https://live.itech.host:3320/stream"
+    },
+    {
+      "name": "रेडियो मेन्छ्यायम",
+      "frequency": "103.4 MHz",
+      "slug": "radio-menchhyayem",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-menchhyayem.png",
+      "audio_stream_url": "https://live.itech.host:9095/stream"
+    },
+    {
+      "name": "रेडियो तहल्का",
+      "frequency": "91.9 MHz",
+      "slug": "radio-tahalka",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-tahalka_MVKiIdO7Lh.png",
+      "audio_stream_url": "https://live.itech.host:8915/stream"
+    },
+    {
+      "name": "स्काई एफएम (गुल्मी)",
+      "frequency": "90.4 MHz",
+      "slug": "sky-fm-gulmi",
+      "image": "https://npcdn.ratopati.com/media/radio/sky-fm-gulmi.png",
+      "audio_stream_url": "https://live.itech.host:8566/stream"
+    },
+    {
+      "name": "रेडियो जलजला",
+      "frequency": "96.4 MHz",
+      "slug": "radio-jaljala",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jaljala.png",
+      "audio_stream_url": "https://live.itech.host:8149/stream"
+    },
+    {
+      "name": "रेडियो मेट्रो ट्राफिक एफएम",
+      "frequency": "95.5 MHz",
+      "slug": "radio-metro-traffic-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-metro-traffic-fm.png",
+      "audio_stream_url": "https://radio.garden/api/ara/content/listen/ldd2vCHU/channel.mp3?1621999313682"
+    },
+    {
+      "name": "रेडियो रोल्पा",
+      "frequency": "Unknown",
+      "slug": "radio-rolpa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-rolpa.png",
+      "audio_stream_url": "http://live.itech.host:9084/stream"
+    },
+    {
+      "name": "रेडियो कोल्हाबी",
+      "frequency": "Unknown",
+      "slug": "radio-kolhabi",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-kolhabi_OTyfkP42UE.jpg",
+      "audio_stream_url": "http://216.55.141.189:5521/stream"
+    },
+    {
+      "name": "रेडियो नयाँ नेपाल एफ.एम",
+      "frequency": "104.4 MHz",
+      "slug": "radio-naya-nepal-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-naya-nepal.png",
+      "audio_stream_url": "https://live.itech.host:8585/stream"
+    },
+    {
+      "name": "रेडियो रोशी",
+      "frequency": "101.6 MHz",
+      "slug": "radio-roshi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-roshi.png",
+      "audio_stream_url": "https://antares.dribbcast.com/proxy/radioroshi/stream"
+    },
+    {
+      "name": "रेडियो जनता",
+      "frequency": "89.1 MHz",
+      "slug": "radio-janata",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-janata.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8058/stream?listening-from-radio-garden=1622000044556"
+    },
+    {
+      "name": "रेडियो सोनामाई",
+      "frequency": "Unknown",
+      "slug": "radio-sonamai",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sonamai.png",
+      "audio_stream_url": "http://live.itechnepal.com:7037/stream?type=.mp3"
+    },
+    
+    {
+      "name": "रेडियो बिहानी",
+      "frequency": "97.6 MHz",
+      "slug": "radio-bihani",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bihani.png",
+      "audio_stream_url": "https://live.itech.host:9113/stream"
+    },
+  
+    {
+      "name": "रेडियो गुरबाबा",
+      "frequency": "106.4 MHz",
+      "slug": "radio-gurbaba",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-gurbaba.png",
+      "audio_stream_url": "https://live.itech.host:8663/stream"
+    },
+
+    {
+      "name": "रेडियो बागेश्वरी एफएम",
+      "frequency": "94.6 MHz",
+      "slug": "radio-bageshwori-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bageshwori-fm.png",
+      "audio_stream_url": "https://stream.zeno.fm/u3spr2gttzyvv"
+    },
+    {
+      "name": "रेडियो कञ्चन",
+      "frequency": "95.8 MHz",
+      "slug": "radio-kanchan",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-kanchan.png",
+      "audio_stream_url": "https://streaming.softnep.net:10907/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "रेडियो सिद्धबाबा",
+      "frequency": "98.4 MHz",
+      "slug": "radio-siddhababa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-siddhababa.png",
+      "audio_stream_url": "https://live.itech.host:8447/stream"
+    },
+    {
+      "name": "झंकार एफएम",
+      "frequency": "97.5 MHz",
+      "slug": "jhankar-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/jhankar-fm.png",
+      "audio_stream_url": "https://live.itech.host:5070/stream"
+    },
+    {
+      "name": "रेडियो जुगल",
+      "frequency": "Unknown",
+      "slug": "radio-jugal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-jugal.png",
+      "audio_stream_url": "http://live.itechnepal.com:2160/stream"
+    },
+    {
+      "name": "रेडियो थाहा संचार",
+      "frequency": "Unknown",
+      "slug": "radio-thaha-sanchar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-thaha-sanchar.png",
+      "audio_stream_url": "https://streaming.softnep.net:10972/;stream.nsv&type=mp3&volume=60"
+    },
+    {
+      "name": "रेडियो इन्द्र सरोवर",
+      "frequency": "105.8 MHz",
+      "slug": "radio-indra-sarowar",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-indra-sarowar.png",
+      "audio_stream_url": "https://live.itech.host:3100/stream"
+    },
+    {
+      "name": "प्रदेश एफएम",
+      "frequency": "105 MHz",
+      "slug": "pradesh-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/pradesh-fm.png",
+      "audio_stream_url": "https://live.itech.host:8021/live"
+    },
+    {
+      "name": "रेडियो सम्रिदी",
+      "frequency": "92.6 MHz",
+      "slug": "radio-samridha-nepal",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-samridee.png",
+      "audio_stream_url": "http://live.itechnepal.com:2240/stream"
+    },
+    {
+      "name": "रेडियो टप टाउन",
+      "frequency": "107 MHz",
+      "slug": "radio-top-town",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-top-town.png",
+      "audio_stream_url": "https://live.itech.host:4635/stream"
+    },
+    {
+      "name": "युनिक एफ.एम",
+      "frequency": "94.3 MHz",
+      "slug": "unique-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/unique-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10839/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "नागरिक एफएम (झापा )",
+      "frequency": "107.5 MHz",
+      "slug": "nagarik-fm-jhapa",
+      "image": "https://npcdn.ratopati.com/media/radio/nagarik-fm-jhapa.png",
+      "audio_stream_url": "https://live.itech.host:4675/stream?type=.mp3"
+    },
+    {
+      "name": "सनातन रेडियो नेटवर्क",
+      "frequency": "Unknown",
+      "slug": "sanatan-radio-network-online",
+      "image": "https://npcdn.ratopati.com/media/radio/sanata-radio-network.png",
+      "audio_stream_url": "https://stream.zeno.fm/18a8b7pk8x8uv"
+    },
+    {
+      "name": "भिजन एफएम",
+      "frequency": "90.5 MHz",
+      "slug": "vision-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vision-fm.png",
+      "audio_stream_url": "https://stream.hamropatro.com/8645"
+    },
+    {
+      "name": "नमस्ते एफएम",
+      "frequency": "Unknown",
+      "slug": "namaste-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/namaste-fm.png",
+      "audio_stream_url": "https://live.itech.host:7019/stream?listening-from-radio-garden=1626062150151"
+    },
+    {
+      "name": "ईगल एफएम",
+      "frequency": "99.4 MHz",
+      "slug": "eagle-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/eagle-fm.png",
+      "audio_stream_url": "https://live.itech.host:2960/stream"
+    },
+    {
+      "name": "रेडियो मलमला",
+      "frequency": "Unknown",
+      "slug": "radio-malmala",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-malmala.png",
+      "audio_stream_url": "https://live.itech.host:3180/stream"
+    },
+    {
+      "name": "स्काई एफएम (बिराटनगर)",
+      "frequency": "Unknown",
+      "slug": "sky-fm-biratnagar",
+      "image": "https://npcdn.ratopati.com/media/radio/sky-fm-biratnagar.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8022/stream"
+    },
+    {
+      "name": "रेडियो छिमेकी",
+      "frequency": "Unknown",
+      "slug": "radio-chhimeki",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-chhimeki.png",
+      "audio_stream_url": "https://live.itech.host:2190/stream"
+    },
+    {
+      "name": "नया आशा एफएम",
+      "frequency": "Unknown",
+      "slug": "naya-aasha-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/naya-aasha-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8060/stream"
+    },
+    {
+      "name": "रेडियो भेरीगंगा",
+      "frequency": "Unknown",
+      "slug": "radio-bheriganga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bheriganga.png",
+      "audio_stream_url": "https://live.itech.host:8006/stream"
+    },
+  
+    {
+      "name": "रेडियो एक्टिभ एफएम",
+      "frequency": "97.2 MHz",
+      "slug": "radio-active-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-active-fm.png",
+      "audio_stream_url": "https://streaming.webhostnepal.com/8042/stream"
+    },
+    {
+      "name": "रेडियो आकाश गंगा",
+      "frequency": "88.5 MHz",
+      "slug": "radio-aakash-ganga",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-aakash-ganga.png",
+      "audio_stream_url": "http://103.213.31.60:8287/index.html?sid=1"
+    },
+    {
+      "name": "रेडियो माडी आवाज",
+      "frequency": "98.6 MHz",
+      "slug": "radio-madi-aawaj",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-madi-aawaj.png",
+      "audio_stream_url": "https://stream-172.zeno.fm/zxio2op4haiuv"
+    },
+    {
+      "name": "रेडियो संखुवासभा",
+      "frequency": "99.5 MHz",
+      "slug": "radio-sankhuwasava",
+      "image": "https://npcdn.ratopati.com/media/radios/radio-sankhuwasava_p6vlMWX2Kw.jpg",
+      "audio_stream_url": "https://live.itech.host:3270/stream"
+    },
+    {
+      "name": "रेडियो मेलम्ची",
+      "frequency": "107.2 MHz",
+      "slug": "radio-melamchi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-melamchi.png",
+      "audio_stream_url": "https://streaming.softnep.net:10948/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो तिफदी",
+      "frequency": "99.1 MHz",
+      "slug": "radio-tiphadee",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-tiphadee.png",
+      "audio_stream_url": "https://live.itech.host:9382/stream"
+    },
+    {
+      "name": "पपुलर एफएम",
+      "frequency": "99.5 MHz",
+      "slug": "popular-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/popular-fm.png",
+      "audio_stream_url": "https://onlineradio.websoftitnepal.com/8024/stream"
+    },
+  
+    {
+      "name": "रेडियो पल्लवी",
+      "frequency": "Unknown",
+      "slug": "radio-pallawee",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-pallawee.png",
+      "audio_stream_url": "https://radio-streaming-serv.hamropatro.com:8020/radio.mp3"
+    },
+    {
+      "name": "रेडियो नेवामी",
+      "frequency": "Unknown",
+      "slug": "radio-newamey",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-newamey.png",
+      "audio_stream_url": "http://radio.garden/api/ara/content/listen/gjlOSCgv/channel.mp3?1621999485831"
+    },
+    {
+      "name": "रेडियो साथी",
+      "frequency": "98.6 MHz",
+      "slug": "radio-sathi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sathi.png",
+      "audio_stream_url": "https://streaming.softnep.net:10863/;stream.nsv&type=mp3"
+    },
+  
+    {
+      "name": "गणतन्त्र एफएम",
+      "frequency": "95.1 MHz",
+      "slug": "ganatantra-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/ganatantra-fm.png",
+      "audio_stream_url": "https://live.itech.host:9167/stream"
+    },
+    {
+      "name": "रिलेसन एफएम",
+      "frequency": "88 MHz",
+      "slug": "relation-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/relation-fm.png",
+      "audio_stream_url": "https://streaming.softnep.net:10928/;stream.nsv&type=mp3"
+    },
+    {
+      "name": "रेडियो भरोसा",
+      "frequency": "Unknown",
+      "slug": "radio-bharosa",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-bharosa.png",
+      "audio_stream_url": "http://216.55.141.189:8268/;stream.nsv&type=mp3&volume=90"
+    },
+
+    {
+      "name": "भक्तपुर एफएम",
+      "frequency": "Unknown",
+      "slug": "bhaktapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radios/bhaktapur-fm_ls0s4zIeQ6.jpg",
+      "audio_stream_url": "https://streaming.softnep.net:10846/;stream.nsv&type=mp3&volume=70"
+    },
+    {
+      "name": "विजयपुर एफएम",
+      "frequency": "98.8 MHz",
+      "slug": "vijayapur-fm",
+      "image": "https://npcdn.ratopati.com/media/radio/vijayapur-fm.png",
+      "audio_stream_url": "https://live.itech.host:9484/stream"
+    },
+ 
+    {
+      "name": "रेडियो सिन्धुलीगढी",
+      "frequency": "92 MHz",
+      "slug": "radio-sindhuligadhi",
+      "image": "https://npcdn.ratopati.com/media/radio/radio-sindhuligadhi.png",
+      "audio_stream_url": "https://live.itech.host:1525/stream"
+    },
+ 
+  ]
